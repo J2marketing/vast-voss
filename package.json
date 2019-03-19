@@ -30,8 +30,11 @@
     "storybook:build": "build-storybook -c .storybook -o public/docs"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
+    "@storybook/theming": "^5.0.3",
     "gatsby": "^2.0.91",
     "gatsby-image": "^2.0.26",
     "gatsby-mdx": "^0.3.5",
@@ -51,12 +54,12 @@
     "styled-css-grid": "^1.2.1"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "4.1.6",
-    "@storybook/addon-actions": "4.1.6",
-    "@storybook/addon-info": "4.1.6",
-    "@storybook/addon-options": "4.1.6",
-    "@storybook/addon-viewport": "4.1.6",
-    "@storybook/react": "4.1.6",
+    "@storybook/addon-a11y": "5.0.3",
+    "@storybook/addon-actions": "5.0.3",
+    "@storybook/addon-info": "5.0.3",
+    "@storybook/addon-options": "5.0.3",
+    "@storybook/addon-viewport": "5.0.3",
+    "@storybook/react": "5.0.3",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
