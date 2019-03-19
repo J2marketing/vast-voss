@@ -1,6 +1,6 @@
 import { addDecorator, configure } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
-
+import vossTheme from './vossTheme';
 import GlobalStyleDecorator from './components/GlobalStyleDecorator';
 
 const req = require.context('../src', true, /.story.js$/);
@@ -12,8 +12,7 @@ addDecorator(GlobalStyleDecorator);
 
 // If you'd like to customize your storybook instance. See: https://github.com/storybooks/storybook/tree/next/addons/options
 addDecorator(withOptions({
-  name: 'awesome-gatsby-starter',
-  url: 'https://awesome-gatsby-starter.netlify.com/',
+  theme: vossTheme,
   hierarchySeparator: /\/|\./,
   hierarchyRootSeparator: /\|/,
 }));
