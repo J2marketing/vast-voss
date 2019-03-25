@@ -1,20 +1,18 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import GatsbyAstronaut from '../../assets/gatsby-astronaut.png';
+import vossLogo from '../../assets/vossGreen.png';
 
-const story = storiesOf('Documentation', module);
+const story = storiesOf('VOSS UI KIT', module);
 
-story.add('Introduction', () => (
+story.add('Information', () => (
   <>
-    <div style={{ textAlign: 'center' }}>
-      <img src={GatsbyAstronaut} alt="Gatsby Astronaut" style={{ width: '300px', marginBottom: '1rem' }} />
-      <h1>awesome-gatsby-starter</h1>
+    <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <img src={vossLogo} alt="Gatsby Astronaut" style={{ width: '300px', marginBottom: '1rem' }} />
+      <h1>VOSS UI Library</h1>
       <p>
-        <strong>Thanks for using awesome-gatsby-starter!</strong>
+        <strong>Welcome to the VOSS component library. Usage of all VOSS site components is detailed here.</strong>
         <br />
-        Remember to <a href="https://github.com/South-Paw/awesome-gatsby-starter">drop a ⭐ on the project</a> if you
-        find it useful.
       </p>
     </div>
   </>
