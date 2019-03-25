@@ -28,3 +28,15 @@ story.add('Grid Row Component 5 Column', () =>
         <Cell>Test4</Cell>
         <Cell>Test5</Cell>
     </Grid>, documentationConfig);
+
+story.add('Grid Row Responsive 120px', () =>
+    <Grid columns={"repeat(auto-fit,minmax(120px,1fr))"}>
+        <Cell>Test</Cell>
+        <Cell>Test2</Cell>
+        <Cell>Test3</Cell>
+        <Cell>Test4</Cell>
+        <Cell>Test5</Cell>
+        <Cell>Test6</Cell>
+        <Cell>Test7</Cell>
+        <Cell>Test8</Cell>
+    </Grid>, documentationConfig);

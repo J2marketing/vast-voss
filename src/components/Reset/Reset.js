@@ -64,6 +64,8 @@ export const ResetStyle = createGlobalStyle`
   }
 
   body {
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+    font-family: 'Lato', sans-serif;
     background: ${COLOR.WHITE};
   }
 

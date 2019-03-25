@@ -1,6 +1,6 @@
 
 export const COLOR = {
-  WHITE: '#ffffff',
+  WHITE: '#f1f1f1',
   BLACK: '#000000',
   REBECCA_PURPLE: '#663399',
   BLUE: '#1a58cc',
@@ -13,3 +13,15 @@ export const NAV_ITEMS = [
   { to: '/mdx-example', label: 'Markdown Example' },
   { href: '/docs/', label: 'Storybook' },
 ];
+
+export const themeNormal = {
+  main: COLOR.VOSS_GREEN,
+  border: COLOR.VOSS_GREEN,
+  text: COLOR.WHITE
+}
+
+export const inverted = {
+  main: COLOR.WHITE,
+  border: COLOR.VOSS_GREEN,
+  text: COLOR.VOSS_GREEN
+}
