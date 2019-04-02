@@ -58,7 +58,7 @@
     "@storybook/addon-info": "5.0.5",
     "@storybook/addon-options": "5.0.5",
     "@storybook/addon-viewport": "5.0.5",
-    "@storybook/theming": "^5.0.5",
+    "@storybook/theming": "5.0.5",
     "@storybook/react": "5.0.5",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
