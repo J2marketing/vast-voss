@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Logo } from '../../assets/vossLogoWhite.png'
 import { Container } from '../Container';
+import { Logo } from '../../assets/vossLogoWhite.png';
 import { HeaderWrapper, HeaderInner, Navigation, SiteImg } from './styled';
 
-const Header = ({ title, navigation }) => (
+
+
+const Header = ({ logo, navigation }) => (
   <HeaderWrapper>
     <Container>
       <HeaderInner>
-        <SiteImg src={Logo} />
+        <SiteImg src={logo} />
         {navigation && <Navigation>{navigation}</Navigation>}
       </HeaderInner>
     </Container>
@@ -17,13 +19,13 @@ const Header = ({ title, navigation }) => (
 
 Header.propTypes = {
   /** Title for the site */
-  title: PropTypes.string,
+  logo: PropTypes.string,
   /** Array of navigation items */
   navigation: PropTypes.arrayOf(PropTypes.node),
 };
 
 Header.defaultProps = {
-  title: null,
+  logo: Logo,
   navigation: null,
 };
 

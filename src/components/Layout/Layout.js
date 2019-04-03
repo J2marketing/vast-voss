@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-
+import { Logo } from '../../assets/vossLogoWhite.png'
 import { Header } from '../Header';
 import { Container } from '../Container';
 import { ResetStyle } from '../Reset';
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
           >
             <html lang="en" />
           </Helmet>
-          <Header title={data.site.siteMetadata.title} navigation={navigationItems} />
+          <Header  navigation={navigationItems} />
           <Container>{children}</Container>
         </>
       )}
