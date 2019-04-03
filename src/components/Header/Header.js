@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Logo } from '../../assets/vossLogoWhite.png'
 import { Container } from '../Container';
-import { HeaderWrapper, HeaderInner, SiteTitle, Navigation } from './styled';
+import { HeaderWrapper, HeaderInner, Navigation, SiteImg } from './styled';
 
 const Header = ({ title, navigation }) => (
   <HeaderWrapper>
     <Container>
       <HeaderInner>
-        <SiteTitle to="/">{title}</SiteTitle>
+        <SiteImg src={Logo} />
         {navigation && <Navigation>{navigation}</Navigation>}
       </HeaderInner>
     </Container>

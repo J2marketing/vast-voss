@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
-
 import { COLOR } from '../../constants';
 
 export const HeaderWrapper = styled.div`
@@ -13,9 +12,8 @@ export const HeaderInner = styled.div`
   flex-flow: nowrap row;
 `;
 
-export const SiteTitle = styled.h1`
+export const SiteImg = styled.img`
   margin: 0;
-  color: ${COLOR.WHITE};
 `;
 
 export const Navigation = styled.div`
