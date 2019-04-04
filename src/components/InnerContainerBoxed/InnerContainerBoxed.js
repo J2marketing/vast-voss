@@ -4,19 +4,19 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 100vw;
-  padding: 0px;
+  max-width: 80vw;
+  padding: 1.5rem 1rem;
   ${({ isDebug }) => isDebug && 'background-color: orange;'}
 `;
 
-const Container = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
+const InnerContainerBoxed = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
 
-Container.defaultProps = {
+InnerContainerBoxed.defaultProps = {
   isDebug: false,
 };
 
-Container.propTypes = {
+InnerContainerBoxed.propTypes = {
   isDebug: PropTypes.bool,
 };
 
-export { Container };
+export { InnerContainerBoxed };

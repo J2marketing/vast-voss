@@ -10,10 +10,14 @@ export const HeaderWrapper = styled.div`
 export const HeaderInner = styled.div`
   display: flex;
   flex-flow: nowrap row;
+  align-items:center;
 `;
 
-export const SiteImg = styled.img`
+export const SiteImg = styled.img.attrs({
+  src: props => props.srcRef
+})`
   margin: 0;
+  max-height:60px;
 `;
 
 export const Navigation = styled.div`

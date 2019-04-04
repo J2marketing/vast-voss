@@ -8,7 +8,8 @@ export const COLOR = {
 };
 
 export const NAV_ITEMS = [
-  { to: '/', label: 'Index' },
+  { to: '/', label: 'Home'},
+  { to: '/oldindex', label: 'Index' },
   { to: '/page-2', label: 'Page 2' },
   { to: '/mdx-example', label: 'Markdown Example' },
   { href: '/docs/', label: 'Storybook' },
@@ -25,3 +26,4 @@ export const inverted = {
   border: COLOR.VOSS_GREEN,
   text: COLOR.VOSS_GREEN
 }
+

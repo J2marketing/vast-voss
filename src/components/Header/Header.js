@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '../Container';
-import { Logo } from '../../assets/vossLogoWhite.png';
+import { InnerContainerBoxed } from '../InnerContainerBoxed';
 import { HeaderWrapper, HeaderInner, Navigation, SiteImg } from './styled';
 
 
 
 const Header = ({ logo, navigation }) => (
   <HeaderWrapper>
-    <Container>
+    <InnerContainerBoxed>
       <HeaderInner>
-        <SiteImg src={logo} />
+        <SiteImg srcRef={require("../../assets/vossLogoWhite.png")} />
         {navigation && <Navigation>{navigation}</Navigation>}
       </HeaderInner>
-    </Container>
+    </InnerContainerBoxed>
   </HeaderWrapper>
 );
 
@@ -25,7 +25,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  logo: Logo,
+  logo: '../../assets/vossLogoWhite.png',
   navigation: null,
 };
 

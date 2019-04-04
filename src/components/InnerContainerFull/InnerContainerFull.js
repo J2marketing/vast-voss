@@ -5,18 +5,18 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 100vw;
-  padding: 0px;
+  padding: 0rem 0rem;
   ${({ isDebug }) => isDebug && 'background-color: orange;'}
 `;
 
-const Container = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
+const InnerContainerFull = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
 
-Container.defaultProps = {
+InnerContainerFull.defaultProps = {
   isDebug: false,
 };
 
-Container.propTypes = {
+InnerContainerFull.propTypes = {
   isDebug: PropTypes.bool,
 };
 
-export { Container };
+export { InnerContainerFull };
