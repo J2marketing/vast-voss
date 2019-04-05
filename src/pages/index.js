@@ -2,18 +2,22 @@ import React from 'react';
 import { Link } from 'gatsby';
 import  { Cell, Grid } from "styled-css-grid";
 import { Layout } from '../components/Layout';
+import { Button } from '../components/Button';
 import Image from './image';
+import { themeNormal, inverted, transparent } from '../constants'
+import vossLogo from '../assets/vossHeaderLogo.png'
 import { InnerContainerBoxed } from '../components/InnerContainerBoxed';
 import { InnerContainerFull } from '../components/InnerContainerFull';
 
 const IndexPage = () => (
   <Layout>
     <InnerContainerFull>
-      <Grid className="fullHeader" columns={3}>
-          <Cell>Test</Cell>
-          <Cell>Test2</Cell>
-          <Cell>Test3</Cell>
-      </Grid>
+      <div className="fullHeader">
+          <div className="heroImage">
+            <img src={vossLogo} />
+          </div>
+          <Button themeBtn={transparent} children={'Explore Solutions'} onClick={() => alert('Great job clicking that button!')}/>
+      </div>
     </InnerContainerFull>
     <InnerContainerBoxed>
       <p>

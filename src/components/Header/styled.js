@@ -11,6 +11,7 @@ export const HeaderInner = styled.div`
   display: flex;
   flex-flow: nowrap row;
   align-items:center;
+  max-height:15vh;
 `;
 
 export const SiteImg = styled.img.attrs({

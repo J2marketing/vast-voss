@@ -2,17 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import { Logo } from '../../assets/vossLogoWhite.png'
+import { backgroundImage } from '../../assets/vossBgHeader.jpg'
 import { Header } from '../Header';
 import { Container } from '../Container';
 import { ResetStyle } from '../Reset';
 import { NAV_ITEMS } from '../../constants';
 import { createGlobalStyle } from "styled-components";
 
-//Need to find a better way to inject global styles. Better yet, TODO: make a seperate header styled component
+//Need to find a better way to inject global styles. Better yet, TODO: make a seperate header styled component. Allow it to accept image prop.
 const GlobalStyle = createGlobalStyle`
   .fullHeader{
-    background-color:black;
+    min-height:85vh;
+    background-image: url(${require('../../assets/vossBgHeaderDarkNoBoat.jpg')});
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .fullHeader img{
+    max-width:50vw;
   }
 `;
 
