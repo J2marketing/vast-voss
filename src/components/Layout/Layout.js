@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import { backgroundImage } from '../../assets/vossBgHeader.jpg'
+
 import { Header } from '../Header';
 import { Container } from '../Container';
 import { ResetStyle } from '../Reset';
@@ -23,6 +23,12 @@ const GlobalStyle = createGlobalStyle`
   }
   .fullHeader img{
     max-width:50vw;
+  }
+  .buttonCTAs{
+    display:flex;
+    & button{
+      margin:10px;
+    }
   }
 `;
 

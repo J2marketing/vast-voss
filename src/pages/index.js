@@ -16,7 +16,10 @@ const IndexPage = () => (
           <div className="heroImage">
             <img src={vossLogo} />
           </div>
-          <Button themeBtn={transparent} children={'Explore Solutions'} onClick={() => alert('Great job clicking that button!')}/>
+          <div className="buttonCTAs">
+            <Button themeBtn={transparent} children={'Explore Solutions'} onClick={() => alert('Great job clicking that button!')}/>
+            <Button themeBtn={transparent} children={'Explore Even More Solutions'} onClick={() => alert('Great job clicking that button!')}/>
+          </div>
       </div>
     </InnerContainerFull>
     <InnerContainerBoxed>

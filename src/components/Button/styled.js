@@ -16,9 +16,9 @@ export const ButtonWrapper = styled.button`
   &:hover {
     cursor:pointer;
     transition: all 300ms ease-in-out;
-    border: 2px solid ${props => props.theme.border};
-    background-color: ${props => props.theme.text};
-    color: ${props => props.theme.main};
+    border: 2px solid ${props => props.theme.borderHov};
+    background-color: ${props => props.theme.mainHov};
+    color: ${props => props.theme.textHov};
   }
 `;
 

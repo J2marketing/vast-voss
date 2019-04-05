@@ -19,18 +19,27 @@ export const NAV_ITEMS = [
 export const themeNormal = {
   main: COLOR.VOSS_GREEN,
   border: COLOR.VOSS_GREEN,
-  text: COLOR.WHITE
+  text: COLOR.WHITE,
+  mainHov: COLOR.VOSS_GREEN,
+  borderHov: COLOR.VOSS_GREEN,
+  textHov: COLOR.WHITE
 }
 
 export const inverted = {
   main: COLOR.WHITE,
   border: COLOR.VOSS_GREEN,
-  text: COLOR.VOSS_GREEN
+  text: COLOR.VOSS_GREEN,
+  mainHov: COLOR.WHITE,
+  borderHov: COLOR.VOSS_GREEN,
+  textHov: COLOR.VOSS_GREEN
 }
 
 export const transparent = {
-  main: COLOR.VOSS_GREEN,
+  main: COLOR.TRANSPARENT,
   border: COLOR.WHITE,
-  text: COLOR.WHITE
+  text: COLOR.WHITE,
+  mainHov: COLOR.VOSS_GREEN,
+  borderHov: COLOR.VOSS_GREEN,
+  textHov: COLOR.WHITE
 }
 
