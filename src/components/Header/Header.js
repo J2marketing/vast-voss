@@ -2,21 +2,45 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '../Container';
 import { InnerContainerBoxed } from '../InnerContainerBoxed';
-import { HeaderWrapper, HeaderInner, Navigation, MobileNavigation, SiteImg } from './styled';
+import { MenuIconContainer, HeaderWrapper, HeaderInner, Navigation, MobileNavigation, SiteImg, MenuIcon } from './styled';
+import menuIcon from '../../assets/menuIcon.png';
+import vossLogoWhite from '../../assets/vossLogoWhite.png';
 
 
 
-const Header = ({ logo, navigation }) => (
-  <HeaderWrapper>
-    <InnerContainerBoxed>
-      <HeaderInner>
-        <SiteImg srcRef={require("../../assets/vossLogoWhite.png")} />
-        {navigation && <Navigation id="desktopNav">{navigation}</Navigation>}
-        {navigation && <MobileNavigation id="mobileNav">Mobile{navigation}</MobileNavigation>}
-      </HeaderInner>
-    </InnerContainerBoxed>
-  </HeaderWrapper>
-);
+class Header extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e){
+    e.preventDefault();
+    console.log("testing");
+  }
+
+  render(){
+    return(
+      <HeaderWrapper>
+        <InnerContainerBoxed>
+          <HeaderInner>
+            <SiteImg src={vossLogoWhite} />
+            {this.props.navigation && <Navigation id="desktopNav">{this.props.navigation}</Navigation>}
+            <MenuIconContainer className="menuFunc" onClick={this.handleClick}>
+              <MenuIcon className="menuIcon" src={menuIcon}/>
+            </MenuIconContainer>
+            {this.props.navigation && 
+            <MobileNavigation id="mobileNav">
+              {this.props.navigation}
+            </MobileNavigation>}
+          </HeaderInner>
+        </InnerContainerBoxed>
+      </HeaderWrapper>
+    )
+  }
+  
+}
 
 Header.propTypes = {
   /** Title for the site */

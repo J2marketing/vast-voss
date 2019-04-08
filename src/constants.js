@@ -6,6 +6,7 @@ export const COLOR = {
   REBECCA_PURPLE: '#663399',
   BLUE: '#1a58cc',
   VOSS_GREEN: '#195942',
+  VOSS_GREEN_TRANSPARENT: 'rgba(25,89,66, 0.8)',
   TRANSPARENT: 'rgba(0,0,0,0)'
 };
 

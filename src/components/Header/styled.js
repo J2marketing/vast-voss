@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
+import { darken, opacify } from 'polished';
 import { COLOR } from '../../constants';
 
 export const HeaderWrapper = styled.div`
@@ -14,11 +14,51 @@ export const HeaderInner = styled.div`
   max-height:15vh;
 `;
 
-export const SiteImg = styled.img.attrs({
-  src: props => props.srcRef
-})`
+
+
+export const SiteImg = styled.img`
   margin: 0;
   max-height:60px;
+`;
+
+export const MenuIcon = styled.img`
+  margin-left: auto;
+  @media only screen and (max-width:980px){
+    display:flex;
+  }
+  display: none;
+  max-width:54px;
+  flex-flow: nowrap row;
+  align-items: flex-end;
+  cursor: pointer;
+    &:focus,
+    &:hover {
+      color: ${darken(0.2, COLOR.WHITE)};
+    }
+  }
+  .menuFunc{
+    display:none;
+  }
+`;
+
+export const MenuIconContainer = styled.a`
+  margin-left: auto;
+  @media only screen and (max-width:980px){
+    display:flex;
+  }
+  display: none;
+  max-width:54px;
+  flex-flow: nowrap row;
+  align-items: flex-end;
+  cursor: pointer;
+    &:focus,
+    &:hover {
+      color: ${darken(0.2, COLOR.WHITE)};
+    }
+  }
+  .menuFunc{
+    display:none;
+  }
 `;
 
 export const Navigation = styled.div`
@@ -47,19 +87,20 @@ export const Navigation = styled.div`
 `;
 
 export const MobileNavigation = styled.div`
-  @media only screen and (max-width:980px){
-    display: flex;
-  }
   margin-left: auto;
   display: none;
-  flex-flow: nowrap row;
-  align-items: flex-end;
-
+  position:fixed;
+  background-color:${COLOR.VOSS_GREEN_TRANSPARENT};
+  top:0;
+  left:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
   & > * {
-    margin-left: 1rem;
-    color: ${COLOR.WHITE};
-    cursor: pointer;
-
+    color:${COLOR.WHITE};
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.WHITE)};
