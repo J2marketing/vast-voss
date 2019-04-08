@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '../Container';
 import { InnerContainerBoxed } from '../InnerContainerBoxed';
-import { HeaderWrapper, HeaderInner, Navigation, SiteImg } from './styled';
+import { HeaderWrapper, HeaderInner, Navigation, MobileNavigation, SiteImg } from './styled';
 
 
 
@@ -11,7 +11,8 @@ const Header = ({ logo, navigation }) => (
     <InnerContainerBoxed>
       <HeaderInner>
         <SiteImg srcRef={require("../../assets/vossLogoWhite.png")} />
-        {navigation && <Navigation>{navigation}</Navigation>}
+        {navigation && <Navigation id="desktopNav">{navigation}</Navigation>}
+        {navigation && <MobileNavigation id="mobileNav">Mobile{navigation}</MobileNavigation>}
       </HeaderInner>
     </InnerContainerBoxed>
   </HeaderWrapper>

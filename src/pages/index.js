@@ -22,16 +22,15 @@ const IndexPage = () => (
           </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerBoxed>
-      <p>
-        <strong>Thanks for using awesome-gatsby-starter!</strong> Remember to{' '}
-        <a href="https://github.com/South-Paw/awesome-gatsby-starter">drop a ⭐ on the project</a> if you find it useful.
-      </p>
-      <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
-    </InnerContainerBoxed>
+    <InnerContainerFull isWavyTop isWavyBottom>
+      <InnerContainerBoxed>
+        <Grid columns={"repeat(auto-fit,minmax(200px,1fr))"}>
+          <Cell className="debug">Test</Cell>
+          <Cell className="debug">Test2</Cell>
+          <Cell className="debug">Test3</Cell>
+        </Grid>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
   </Layout>
 );
 

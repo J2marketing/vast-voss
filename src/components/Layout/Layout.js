@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
       margin:10px;
     }
   }
+  .debug{
+    background-color:red;
+  }
 `;
 
 const Layout = ({ children }) => {

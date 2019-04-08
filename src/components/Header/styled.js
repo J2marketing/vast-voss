@@ -23,7 +23,35 @@ export const SiteImg = styled.img.attrs({
 
 export const Navigation = styled.div`
   margin-left: auto;
+  @media only screen and (max-width:980px){
+    display:none;
+  }
   display: flex;
+  flex-flow: nowrap row;
+  align-items: flex-end;
+
+  & > * {
+    margin-left: 1rem;
+    color: ${COLOR.WHITE};
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: ${darken(0.2, COLOR.WHITE)};
+    }
+  }
+
+  & > *:first-child {
+    margin-left: 0;
+  }
+`;
+
+export const MobileNavigation = styled.div`
+  @media only screen and (max-width:980px){
+    display: flex;
+  }
+  margin-left: auto;
+  display: none;
   flex-flow: nowrap row;
   align-items: flex-end;
 

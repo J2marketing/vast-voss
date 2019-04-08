@@ -1,6 +1,7 @@
 
 export const COLOR = {
   WHITE: '#f1f1f1',
+  GREY: '#ededed',
   BLACK: '#000000',
   REBECCA_PURPLE: '#663399',
   BLUE: '#1a58cc',
