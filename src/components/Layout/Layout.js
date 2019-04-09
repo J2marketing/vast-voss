@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-
+import { createGlobalStyle } from 'styled-components';
+import vossBgHeaderDarkNoBoat from '../../assets/vossBgHeaderDarkNoBoat.jpg';
 import { Header } from '../Header';
 import { Container } from '../Container';
 import { ResetStyle } from '../Reset';
 import { NAV_ITEMS } from '../../constants';
-import { createGlobalStyle } from "styled-components";
 
-//This needs changed the second this is more than a one page site. Need to find a better way to inject global styles. Better yet, TODO: make a seperate header styled component. Allow it to accept image prop.
+// This needs changed the second this is more than a one page site. Need to find a better way to inject global styles. Better yet, TODO: make a seperate header styled component. Allow it to accept image prop.
 const GlobalStyle = createGlobalStyle`
   .fullHeader{
     min-height:85vh;
-    background-image: url(${require('../../assets/vossBgHeaderDarkNoBoat.jpg')});
+    background-image: url(${vossBgHeaderDarkNoBoat});
     background-size: cover;
     background-position: center;
     display:flex;
@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
           >
             <html lang="en" />
           </Helmet>
-          <Header  navigation={navigationItems} />
+          <Header navigation={navigationItems} />
           <Container>{children}</Container>
         </>
       )}
