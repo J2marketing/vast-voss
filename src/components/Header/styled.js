@@ -62,7 +62,7 @@ export const MenuIconContainer = styled.a`
     display:none;
   }
   &.active{
-    transform: rotateZ(180deg);
+    transform: rotateZ(90deg);
     transition: transform 0.6s ease-in-out;
   }
 `;
