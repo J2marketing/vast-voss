@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { COLOR } from '../../constants';
 
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 100vw;
+  background-color: ${props => props.bgColor};
+  color: ${props => props.textColor};
   padding: 0rem 0rem;
   ${({ isDebug }) => isDebug && 'background-color: orange;'}
   &:before, &:after {
@@ -32,19 +35,43 @@ const Wrapper = styled.div`
       isWavyBottom &&
       `
       bottom: 0;
-      background-image: linear-gradient(15deg, #2980b9 50%, #3498db 50%);
+      content: "";
+      height:20px;
+      background: url(https://goj2.com/wp-content/uploads/2018/08/wave.svg) repeat-x; 
+      transform: rotateX(180deg);
     `}
   }
 `;
 
-const InnerContainerFull = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
+const BottomWave = styled.div`
+  height: 30px;
+  background-color: red;
+`;
+
+const TopWave = styled.div`
+  height: 30px;
+  background-color: red;
+`;
+const InnerContainerFull = ({ isWavyBottom, isWavyTop, children, ...props }) => (
+  <Wrapper {...props}>
+    {isWavyTop && <TopWave />} {children} {isWavyBottom && <BottomWave />}
+  </Wrapper>
+);
 
 InnerContainerFull.defaultProps = {
+  isWavyTop: null,
+  isWavyBottom: null,
+  textColor: COLOR.WHITE,
+  bgColor: COLOR.VOSS_GREEN,
   children: null,
   isDebug: false,
 };
 
 InnerContainerFull.propTypes = {
+  isWavyTop: PropTypes.element,
+  isWavyBottom: PropTypes.element,
+  textColor: PropTypes.string,
+  bgColor: PropTypes.string,
   children: PropTypes.element,
   isDebug: PropTypes.bool,
 };

@@ -2,8 +2,12 @@ import React from 'react';
 import { Cell, Grid } from 'styled-css-grid';
 import { Layout } from '../components/Layout';
 import { Button } from '../components/Button';
-import { transparent } from '../constants';
+import { transparent, COLOR, themeNormal } from '../constants';
 import vossLogo from '../assets/vossHeaderLogo.png';
+import stepOnePic from '../assets/step1.jpg';
+import stepTwoPic from '../assets/step2.jpg';
+import stepThreePic from '../assets/step3.jpg';
+import stepFourPic from '../assets/step4.jpg';
 import { InnerContainerBoxed } from '../components/InnerContainerBoxed';
 import { InnerContainerFull } from '../components/InnerContainerFull';
 
@@ -20,12 +24,120 @@ const IndexPage = () => (
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull isWavyTop isWavyBottom>
+    <InnerContainerFull bgColor={COLOR.VOSS_GREEN_LIGHT}>
       <InnerContainerBoxed>
-        <Grid columns="repeat(auto-fit,minmax(200px,1fr))">
-          <Cell className="debug">Test</Cell>
-          <Cell className="debug">Test2</Cell>
-          <Cell className="debug">Test3</Cell>
+        <Grid columns="repeat(auto-fit,minmax(200px,1fr))" gap="30px">
+          <Cell>
+            <div>
+              <h2>CHEAPER</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a ligula odio. Nam porta suscipit arcu
+                non malesuada. Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar
+                orci, vitae faucibus tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet
+                dignissim sapien at laoreet.
+              </p>
+            </div>
+          </Cell>
+          <Cell>
+            <div>
+              <h2>CLEANER</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a ligula odio. Nam porta suscipit arcu
+                non malesuada. Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar
+                orci, vitae faucibus tortor.
+              </p>
+            </div>
+          </Cell>
+          <Cell>
+            <div>
+              <h2>FASTER</h2>
+              <p>
+                Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
+                tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim sapien at laoreet.
+              </p>
+            </div>
+          </Cell>
+        </Grid>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull bgColor={COLOR.VOSS_GREEN}>
+      <InnerContainerBoxed>
+        <h2 className="largeHeader">THE PROCESS</h2>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
+      <InnerContainerBoxed padding="5rem 1rem">
+        <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
+          <Cell middle>
+            <img alt="Step One Pic" src={stepOnePic} />
+          </Cell>
+          <Cell middle>
+            <div>
+              <h2>STEP 1</h2>
+              <p>
+                Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
+                tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
+              </p>
+              <Button theme={themeNormal}>Next</Button>
+            </div>
+          </Cell>
+        </Grid>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
+      <InnerContainerBoxed padding="5rem 1rem">
+        <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
+          <Cell middle>
+            <div>
+              <h2>STEP 2</h2>
+              <p>
+                Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
+                tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
+              </p>
+              <Button theme={themeNormal}>Next</Button>
+            </div>
+          </Cell>
+          <Cell middle>
+            <img alt="Step Two Pic" src={stepTwoPic} />
+          </Cell>
+        </Grid>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
+      <InnerContainerBoxed padding="5rem 1rem">
+        <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
+          <Cell middle>
+            <img alt="Step Two Pic" src={stepThreePic} />
+          </Cell>
+          <Cell middle>
+            <div>
+              <h2>STEP 3</h2>
+              <p>
+                Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
+                tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
+              </p>
+              <Button theme={themeNormal}>Next</Button>
+            </div>
+          </Cell>
+        </Grid>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
+      <InnerContainerBoxed padding="5rem 1rem">
+        <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
+          <Cell middle>
+            <div>
+              <h2>STEP 4</h2>
+              <p>
+                Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
+                tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
+              </p>
+              <Button theme={themeNormal}>Next</Button>
+            </div>
+          </Cell>
+          <Cell middle>
+            <img alt="Step Two Pic" src={stepFourPic} />
+          </Cell>
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>

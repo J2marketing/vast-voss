@@ -80,7 +80,7 @@ export const Navigation = styled.div`
     margin-left: 1rem;
     color: ${COLOR.WHITE};
     cursor: pointer;
-
+    transition: color 0.2s ease-in-out;
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.WHITE)};
@@ -93,6 +93,9 @@ export const Navigation = styled.div`
 `;
 
 export const MobileNavigation = styled.div`
+  @media only screen and (min-width: 980px) {
+    display: none;
+  }
   margin-left: auto;
   display: flex;
   position: fixed;
@@ -112,6 +115,7 @@ export const MobileNavigation = styled.div`
     font-size: 2em;
     opacity: 1;
     color: ${COLOR.WHITE};
+    transition: color 0.2s ease-in-out;
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.WHITE)};
@@ -127,6 +131,9 @@ export const MobileNavigation = styled.div`
   }
 
   &.active {
+    @media only screen and (min-width: 980px) {
+      display: none;
+    }
     display: flex;
     transform: translateY(0%);
   }

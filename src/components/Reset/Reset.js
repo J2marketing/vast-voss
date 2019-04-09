@@ -98,7 +98,9 @@ export const ResetStyle = createGlobalStyle`
     ${headerStyle}
     font-size: 0.8rem;
   }
-
+  img{
+    max-width:100%;
+  }
   p {
     margin-bottom: 1rem;
   }
@@ -158,4 +160,10 @@ export const ResetStyle = createGlobalStyle`
       background-color: transparent;
     }
   }
+
+  .largeHeader{
+    text-align:center;
+    font-size:3.2em;
+  }
+  
 `;
