@@ -12,6 +12,7 @@ export const HeaderInner = styled.div`
   flex-flow: nowrap row;
   align-items:center;
   max-height:15vh;
+  font-weight:900;
 `;
 
 
@@ -43,6 +44,7 @@ export const MenuIcon = styled.img`
 
 export const MenuIconContainer = styled.a`
   margin-left: auto;
+  z-index:20;
   @media only screen and (max-width:980px){
     display:flex;
   }
@@ -88,7 +90,7 @@ export const Navigation = styled.div`
 
 export const MobileNavigation = styled.div`
   margin-left: auto;
-  display: none;
+  display:flex;
   position:fixed;
   background-color:${COLOR.VOSS_GREEN_TRANSPARENT};
   top:0;
@@ -99,7 +101,12 @@ export const MobileNavigation = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction:column;
+  transform: translateY(-100%);
+  transition: transform .6s ease-in-out;
+
   & > * {
+    font-size:2em;
+    opacity:1;
     color:${COLOR.WHITE};
     &:focus,
     &:hover {
@@ -107,7 +114,16 @@ export const MobileNavigation = styled.div`
     }
   }
 
+  &.active > *{
+    opacity:1;
+  }
+
   & > *:first-child {
     margin-left: 0;
+  }
+
+  &.active{
+    display:flex;
+    transform: translateY(0%);
   }
 `;

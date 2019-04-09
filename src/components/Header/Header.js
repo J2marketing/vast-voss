@@ -12,12 +12,16 @@ class Header extends React.Component{
 
   constructor(props){
     super(props);
+    this.state = {
+      menuShown: false
+    }
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e){
-    e.preventDefault();
-    console.log("testing");
+    this.setState({
+      menuShown: !this.state.menuShown
+    });
   }
 
   render(){
@@ -31,7 +35,7 @@ class Header extends React.Component{
               <MenuIcon className="menuIcon" src={menuIcon}/>
             </MenuIconContainer>
             {this.props.navigation && 
-            <MobileNavigation id="mobileNav">
+            <MobileNavigation className={this.state.menuShown ? "mobileMenu active" : "mobileMenu"} id="mobileNav">
               {this.props.navigation}
             </MobileNavigation>}
           </HeaderInner>
