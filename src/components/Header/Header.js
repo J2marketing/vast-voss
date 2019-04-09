@@ -36,12 +36,20 @@ class Header extends React.Component {
         <InnerContainerBoxed>
           <HeaderInner>
             <SiteImg alt="VOSS Oil Spill Solutions Logo Full" src={vossLogoWhite} />
-            {navigation && <Navigation id="desktopNav">{navigation}</Navigation>}
-            <MenuIconContainer className="menuFunc" onClick={this.handleClick}>
+            {navigation && (
+              <Navigation role="tablist" id="desktopNav">
+                {navigation}
+              </Navigation>
+            )}
+            <MenuIconContainer className={menuShown ? 'menuFunc active' : 'menuFunc'} onClick={this.handleClick}>
               <MenuIcon className="menuIcon" src={menuIcon} />
             </MenuIconContainer>
             {navigation && (
-              <MobileNavigation className={menuShown ? 'mobileMenu active' : 'mobileMenu'} id="mobileNav">
+              <MobileNavigation
+                aria-hidden={menuShown ? 'false' : 'true'}
+                className={menuShown ? 'mobileMenu active' : 'mobileMenu'}
+                id="mobileNav"
+              >
                 {navigation}
               </MobileNavigation>
             )}

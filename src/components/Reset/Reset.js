@@ -111,7 +111,6 @@ export const ResetStyle = createGlobalStyle`
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.BLUE)};
-      text-decoration: underline;
     }
   }
 

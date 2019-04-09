@@ -51,6 +51,8 @@ export const MenuIconContainer = styled.a`
   flex-flow: nowrap row;
   align-items: flex-end;
   cursor: pointer;
+  transform: rotateZ(0deg);
+  transition: transform 0.6s ease-in-out;
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.WHITE)};
@@ -58,6 +60,10 @@ export const MenuIconContainer = styled.a`
   }
   .menuFunc{
     display:none;
+  }
+  &.active{
+    transform: rotateZ(180deg);
+    transition: transform 0.6s ease-in-out;
   }
 `;
 
