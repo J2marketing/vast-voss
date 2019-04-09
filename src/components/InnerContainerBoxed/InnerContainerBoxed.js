@@ -12,10 +12,12 @@ const Wrapper = styled.div`
 const InnerContainerBoxed = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
 
 InnerContainerBoxed.defaultProps = {
+  children: null,
   isDebug: false,
 };
 
 InnerContainerBoxed.propTypes = {
+  children: PropTypes.element,
   isDebug: PropTypes.bool,
 };
 

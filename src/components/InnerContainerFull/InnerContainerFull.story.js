@@ -4,7 +4,7 @@ import { checkA11y } from '@storybook/addon-a11y';
 import { withInfo } from '@storybook/addon-info';
 
 import { defaultParameters, documentationConfig } from '../../../.storybook/constants';
-import { InnerContainerFull } from './index.js';
+import { InnerContainerFull } from './index';
 
 const story = storiesOf('Components|InnerContainerFull', module)
   .addDecorator(checkA11y)

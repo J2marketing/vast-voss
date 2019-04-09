@@ -35,7 +35,7 @@ class Header extends React.Component {
       <HeaderWrapper>
         <InnerContainerBoxed>
           <HeaderInner>
-            <SiteImg src={vossLogoWhite} />
+            <SiteImg alt="VOSS Oil Spill Solutions Logo Full" src={vossLogoWhite} />
             {navigation && <Navigation id="desktopNav">{navigation}</Navigation>}
             <MenuIconContainer className="menuFunc" onClick={this.handleClick}>
               <MenuIcon className="menuIcon" src={menuIcon} />

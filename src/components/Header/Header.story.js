@@ -7,7 +7,7 @@ import { Header } from './index';
 import { Logo } from '../../assets/vossLogoWhite.png';
 
 const props = {
-  logo: Logo
+  logo: Logo,
 };
 
 const story = storiesOf('Components|Header', module)

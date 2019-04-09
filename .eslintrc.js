@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'plugin:jsx-a11y/recommended'],
   parser: 'babel-eslint',
   env: {
     browser: true,
@@ -11,7 +11,7 @@ module.exports = {
     mount: false,
     graphql: false,
   },
-  plugins: ['react', 'prefer-object-spread', 'compat'],
+  plugins: ['react', 'prefer-object-spread', 'compat', 'jsx-a11y'],
   rules: {
     // Prettier warnings
     'prettier/prettier': 'warn',

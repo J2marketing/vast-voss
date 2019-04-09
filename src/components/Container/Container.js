@@ -12,10 +12,12 @@ const Wrapper = styled.div`
 const Container = ({ children, ...props }) => <Wrapper {...props}>{children}</Wrapper>;
 
 Container.defaultProps = {
+  children: null,
   isDebug: false,
 };
 
 Container.propTypes = {
+  children: PropTypes.element,
   isDebug: PropTypes.bool,
 };
 

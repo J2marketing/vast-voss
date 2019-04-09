@@ -7,7 +7,15 @@ const story = storiesOf('VOSS UI KIT', module);
 
 story.add('Information', () => (
   <>
-    <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <div
+      style={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
       <img src={vossLogo} alt="Gatsby Astronaut" style={{ width: '300px', marginBottom: '1rem' }} />
       <h1>VOSS UI Library</h1>
       <p>
