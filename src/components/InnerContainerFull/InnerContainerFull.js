@@ -32,7 +32,7 @@ const BottomWave = styled.div`
     transform: rotate(180deg);
   }
 `;
-
+// TODO: Refactor these next 4 components into one that takes variables.
 const WaveImgGreenTop = styled.div`
   height: 198px;
   position: absolute;
@@ -43,8 +43,14 @@ const WaveImgGreenTop = styled.div`
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  animation-delay: 3500ms;
+  @media only screen and (min-width: 500px) {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 3500ms;
+  }
+  @media only screen and (max-width: 500px) {
+    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 2000ms;
+  }
   -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -65,7 +71,12 @@ const WaveImgGreenBottom = styled.div`
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  @media only screen and (min-width: 500px) {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  }
+  @media only screen and (max-width: 500px) {
+    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  }
   -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -87,8 +98,14 @@ const WaveImgGreyTop = styled.div`
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  animation-delay: 3500ms;
+  @media only screen and (min-width: 500px) {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 3500ms;
+  }
+  @media only screen and (max-width: 500px) {
+    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 2000ms;
+  }
   -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -109,7 +126,12 @@ const WaveImgGreyBottom = styled.div`
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  @media only screen and (min-width: 500px) {
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  }
+  @media only screen and (max-width: 500px) {
+    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  }
   -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {

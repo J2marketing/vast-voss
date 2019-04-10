@@ -72,7 +72,7 @@ const IndexPage = () => (
             <img className="floating dropShadow" alt="Step One Pic" src={stepOnePic} />
           </Cell>
           <Cell middle>
-            <div className="floating2">
+            <div  >
               <h2>STEP 1</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -88,7 +88,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div className="floating2">
+            <div  >
               <h2>STEP 2</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -110,7 +110,7 @@ const IndexPage = () => (
             <img className="floating dropShadow" alt="Step Three Pic" src={stepThreePic} />
           </Cell>
           <Cell middle>
-            <div className="floating2">
+            <div  >
               <h2>STEP 3</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -126,7 +126,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div className="floating2">
+            <div  >
               <h2>STEP 4</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -143,6 +143,9 @@ const IndexPage = () => (
     </InnerContainerFull>
     <InnerContainerFull>
       <div className="fullHeader">
+        <div className="heroImage">
+          <img alt="VOSS Oil spill solutions logo" src={vossLogo} />
+        </div>
         <form method="POST" action="/page-2" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <div className="field half first">
