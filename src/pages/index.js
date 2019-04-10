@@ -69,10 +69,10 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <img className="dropShadow" alt="Step One Pic" src={stepOnePic} />
+            <img className="floating dropShadow" alt="Step One Pic" src={stepOnePic} />
           </Cell>
           <Cell middle>
-            <div>
+            <div className="floating2">
               <h2>STEP 1</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -88,7 +88,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div>
+            <div className="floating2">
               <h2>STEP 2</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -98,7 +98,7 @@ const IndexPage = () => (
             </div>
           </Cell>
           <Cell middle>
-            <img className="dropShadow" alt="Step Two Pic" src={stepTwoPic} />
+            <img className="floating dropShadow" alt="Step Two Pic" src={stepTwoPic} />
           </Cell>
         </Grid>
       </InnerContainerBoxed>
@@ -107,10 +107,10 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <img className="dropShadow" alt="Step Three Pic" src={stepThreePic} />
+            <img className="floating dropShadow" alt="Step Three Pic" src={stepThreePic} />
           </Cell>
           <Cell middle>
-            <div>
+            <div className="floating2">
               <h2>STEP 3</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -126,7 +126,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div>
+            <div className="floating2">
               <h2>STEP 4</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -136,7 +136,7 @@ const IndexPage = () => (
             </div>
           </Cell>
           <Cell middle>
-            <img className="dropShadow" alt="Step Four Pic" src={stepFourPic} />
+            <img className="floating dropShadow" alt="Step Four Pic" src={stepFourPic} />
           </Cell>
         </Grid>
       </InnerContainerBoxed>

@@ -44,7 +44,8 @@ const WaveImgGreenTop = styled.div`
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+  animation-delay: 3500ms;
+  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -65,7 +66,7 @@ const WaveImgGreenBottom = styled.div`
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -87,7 +88,8 @@ const WaveImgGreyTop = styled.div`
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+  animation-delay: 3500ms;
+  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -108,7 +110,7 @@ const WaveImgGreyBottom = styled.div`
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
