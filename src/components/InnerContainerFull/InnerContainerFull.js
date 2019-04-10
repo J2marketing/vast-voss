@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { COLOR } from '../../constants';
+import waveDarkGreen from '../../assets/waveDarkGreen.svg';
 
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 100vw;
+  overflow: hidden;
   background-color: ${props => props.bgColor};
   color: ${props => props.textColor};
   padding: 0rem 0rem;
@@ -44,8 +46,30 @@ const Wrapper = styled.div`
 `;
 
 const BottomWave = styled.div`
-  height: 30px;
-  background-color: red;
+  height: 0%;
+  width: 100%;
+  position: absolute;
+`;
+
+const WaveImgGreen = styled.div`
+  height: 74px;
+  position: absolute;
+  background-repeat: repeat-x;
+  width: 6400px;
+  overflow: hidden;
+  background-color: ${COLOR.WHITE};
+  background-image: url(${waveDarkGreen});
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: rotate(180deg) translate3d(0, 0, 0);
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+      margin-right: 1600px;
+    }
+  }
 `;
 
 const TopWave = styled.div`
@@ -54,7 +78,12 @@ const TopWave = styled.div`
 `;
 const InnerContainerFull = ({ isWavyBottom, isWavyTop, children, ...props }) => (
   <Wrapper {...props}>
-    {isWavyTop && <TopWave />} {children} {isWavyBottom && <BottomWave />}
+    {isWavyTop && <TopWave />} {children}{' '}
+    {isWavyBottom && (
+      <BottomWave>
+        <WaveImgGreen />
+      </BottomWave>
+    )}
   </Wrapper>
 );
 

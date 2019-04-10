@@ -24,8 +24,8 @@ const IndexPage = () => (
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull bgColor={COLOR.VOSS_GREEN_LIGHT}>
-      <InnerContainerBoxed>
+    <InnerContainerFull iswavyBott bgColor={COLOR.VOSS_GREEN_LIGHT}>
+      <InnerContainerBoxed padding="5rem 1rem">
         <Grid columns="repeat(auto-fit,minmax(200px,1fr))" gap="30px">
           <Cell>
             <div>
@@ -60,7 +60,7 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull bgColor={COLOR.VOSS_GREEN}>
+    <InnerContainerFull isWavyBottom bgColor={COLOR.VOSS_GREEN}>
       <InnerContainerBoxed>
         <h2 className="largeHeader">THE PROCESS</h2>
       </InnerContainerBoxed>
@@ -140,6 +140,9 @@ const IndexPage = () => (
           </Cell>
         </Grid>
       </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull>
+      <div className="fullHeader" />
     </InnerContainerFull>
   </Layout>
 );
