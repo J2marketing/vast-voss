@@ -143,34 +143,33 @@ const IndexPage = () => (
     </InnerContainerFull>
     <InnerContainerFull>
       <div className="fullHeader">
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <p>
+        <form method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field">
+          <div className="field half first">
             <label htmlFor="name">
-              Your Name: <input type="text" name="name" />
+              Name
+              <input type="text" name="name" id="name" />
             </label>
-          </p>
-          <p>
+          </div>
+          <div className="field half">
             <label htmlFor="email">
-              Your Email: <input type="email" name="email" />
+              Email
+              <input type="text" name="email" id="email" />
             </label>
-          </p>
-          <p>
-            <label htmlFor="role[]">
-              Your Role:{' '}
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select>
+          </div>
+          <div className="field">
+            <label htmlFor="message">
+              Message
+              <textarea name="message" id="message" rows="6" />
             </label>
-          </p>
-          <p>
-            <label htmlFor="name">
-              Message: <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          </div>
+          <ul className="actions">
+            <li>
+              <input type="submit" value="Send Message" className="special" />
+            </li>
+            <li>
+              <input type="reset" value="Clear" />
+            </li>
+          </ul>
         </form>
       </div>
     </InnerContainerFull>
