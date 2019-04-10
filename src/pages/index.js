@@ -143,7 +143,7 @@ const IndexPage = () => (
     </InnerContainerFull>
     <InnerContainerFull>
       <div className="fullHeader">
-        <form method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form method="post" action="/page-2" data-netlify="true" data-netlify-honeypot="bot-field">
           <div className="field half first">
             <label htmlFor="name">
               Name
@@ -153,7 +153,7 @@ const IndexPage = () => (
           <div className="field half">
             <label htmlFor="email">
               Email
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </label>
           </div>
           <div className="field">
