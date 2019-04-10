@@ -32,7 +32,7 @@ export const MenuIcon = styled.img`
   cursor: pointer;
     &:focus,
     &:hover {
-      color: ${darken(0.2, COLOR.WHITE)};
+      color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
   .menuFunc{
@@ -55,7 +55,7 @@ export const MenuIconContainer = styled.a`
   transition: transform 0.6s ease-in-out;
     &:focus,
     &:hover {
-      color: ${darken(0.2, COLOR.WHITE)};
+      color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
   .menuFunc{
@@ -78,12 +78,12 @@ export const Navigation = styled.div`
 
   & > * {
     margin-left: 1rem;
-    color: ${COLOR.WHITE};
+    color: ${COLOR.LIGHTGREY};
     cursor: pointer;
     transition: color 0.2s ease-in-out;
     &:focus,
     &:hover {
-      color: ${darken(0.2, COLOR.WHITE)};
+      color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
 
@@ -114,11 +114,11 @@ export const MobileNavigation = styled.div`
   & > * {
     font-size: 2em;
     opacity: 1;
-    color: ${COLOR.WHITE};
+    color: ${COLOR.LIGHTGREY};
     transition: color 0.2s ease-in-out;
     &:focus,
     &:hover {
-      color: ${darken(0.2, COLOR.WHITE)};
+      color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
 

@@ -41,7 +41,7 @@ const WaveImgGreenTop = styled.div`
   width: 6400px;
   overflow-y: hidden;
   bottom: 0;
-  background-color: ${COLOR.WHITE};
+  background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -62,7 +62,7 @@ const WaveImgGreenBottom = styled.div`
   background-repeat: repeat-x;
   width: 6400px;
   overflow-y: hidden;
-  background-color: ${COLOR.WHITE};
+  background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -84,7 +84,7 @@ const WaveImgGreyTop = styled.div`
   width: 6400px;
   overflow-y: hidden;
   bottom: 0;
-  background-color: ${COLOR.WHITE};
+  background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -105,7 +105,7 @@ const WaveImgGreyBottom = styled.div`
   background-repeat: repeat-x;
   width: 6400px;
   overflow-y: hidden;
-  background-color: ${COLOR.WHITE};
+  background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -157,7 +157,7 @@ InnerContainerFull.defaultProps = {
   isWavyBottomGreen: null,
   isWavyTopGrey: null,
   isWavyBottomGrey: null,
-  textColor: COLOR.WHITE,
+  textColor: COLOR.LIGHTGREY,
   bgColor: COLOR.VOSS_GREEN,
   children: null,
   isDebug: false,

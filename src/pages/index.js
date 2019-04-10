@@ -65,7 +65,7 @@ const IndexPage = () => (
         <h2 className="largeHeader">THE PROCESS</h2>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
@@ -73,14 +73,12 @@ const IndexPage = () => (
           </Cell>
           <Cell middle>
             <div>
-              <h2 className="dropShadowtext">STEP 1</h2>
-              <p className="dropShadowtext">
+              <h2>STEP 1</h2>
+              <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
                 tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
               </p>
-              <Button className="dropShadow" theme={themeNormal}>
-                Next
-              </Button>
+              <Button theme={themeNormal}>Next</Button>
             </div>
           </Cell>
         </Grid>
@@ -105,7 +103,7 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
@@ -144,7 +142,37 @@ const IndexPage = () => (
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull>
-      <div className="fullHeader" />
+      <div className="fullHeader">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label htmlFor="name">
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label htmlFor="email">
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label htmlFor="role[]">
+              Your Role:{' '}
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label htmlFor="name">
+              Message: <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </InnerContainerFull>
   </Layout>
 );

@@ -1,5 +1,5 @@
 export const COLOR = {
-  WHITE: '#f1f1f1',
+  LIGHTGREY: '#f1f1f1',
   GREY: '#d7d7d7',
   BLACK: '#000000',
   BLUE: '#1a58cc',
@@ -20,26 +20,26 @@ export const NAV_ITEMS = [
 export const themeNormal = {
   main: COLOR.VOSS_GREEN,
   border: COLOR.VOSS_GREEN,
-  text: COLOR.WHITE,
-  mainHov: COLOR.WHITE,
+  text: COLOR.LIGHTGREY,
+  mainHov: COLOR.TRANSPARENT,
   borderHov: COLOR.VOSS_GREEN,
   textHov: COLOR.VOSS_GREEN,
 };
 
 export const inverted = {
-  main: COLOR.WHITE,
+  main: COLOR.LIGHTGREY,
   border: COLOR.VOSS_GREEN,
   text: COLOR.VOSS_GREEN,
   mainHov: COLOR.VOSS_GREEN,
   borderHov: COLOR.VOSS_GREEN,
-  textHov: COLOR.WHITE,
+  textHov: COLOR.LIGHTGREY,
 };
 
 export const transparent = {
   main: COLOR.TRANSPARENT,
-  border: COLOR.WHITE,
-  text: COLOR.WHITE,
+  border: COLOR.LIGHTGREY,
+  text: COLOR.LIGHTGREY,
   mainHov: COLOR.VOSS_GREEN,
   borderHov: COLOR.VOSS_GREEN,
-  textHov: COLOR.WHITE,
+  textHov: COLOR.LIGHTGREY,
 };
