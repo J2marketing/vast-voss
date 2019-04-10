@@ -144,6 +144,7 @@ const IndexPage = () => (
     <InnerContainerFull>
       <div className="fullHeader">
         <form method="post" action="/page-2?no-cache=1" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="field half first">
             <label htmlFor="name">
               Name
