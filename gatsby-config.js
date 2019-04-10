@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Awesome Gatsby Starter',
+    title: 'Vast Oil Spill Solutions',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

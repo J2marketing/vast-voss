@@ -165,5 +165,12 @@ export const ResetStyle = createGlobalStyle`
     text-align:center;
     font-size:3.2em;
   }
+
+  .dropShadow{
+    box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
+  }
+  .dropShadowtext{
+    text-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
+  }
   
 `;

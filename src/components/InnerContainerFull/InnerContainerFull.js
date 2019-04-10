@@ -43,7 +43,7 @@ const WaveImgGreenTop = styled.div`
   bottom: 0;
   background-color: ${COLOR.WHITE};
   background-image: url(${waveDarkGreen});
-  animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -64,7 +64,7 @@ const WaveImgGreenBottom = styled.div`
   overflow-y: hidden;
   background-color: ${COLOR.WHITE};
   background-image: url(${waveDarkGreen});
-  animation: wave 3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -86,7 +86,7 @@ const WaveImgGreyTop = styled.div`
   bottom: 0;
   background-color: ${COLOR.WHITE};
   background-image: url(${waveGrey});
-  animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
@@ -107,7 +107,7 @@ const WaveImgGreyBottom = styled.div`
   overflow-y: hidden;
   background-color: ${COLOR.WHITE};
   background-image: url(${waveGrey});
-  animation: wave 3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {

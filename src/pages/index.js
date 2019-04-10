@@ -69,16 +69,18 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <img alt="Step One Pic" src={stepOnePic} />
+            <img className="dropShadow" alt="Step One Pic" src={stepOnePic} />
           </Cell>
           <Cell middle>
             <div>
-              <h2>STEP 1</h2>
-              <p>
+              <h2 className="dropShadowtext">STEP 1</h2>
+              <p className="dropShadowtext">
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
                 tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
               </p>
-              <Button theme={themeNormal}>Next</Button>
+              <Button className="dropShadow" theme={themeNormal}>
+                Next
+              </Button>
             </div>
           </Cell>
         </Grid>
@@ -98,7 +100,7 @@ const IndexPage = () => (
             </div>
           </Cell>
           <Cell middle>
-            <img alt="Step Two Pic" src={stepTwoPic} />
+            <img className="dropShadow" alt="Step Two Pic" src={stepTwoPic} />
           </Cell>
         </Grid>
       </InnerContainerBoxed>
@@ -107,7 +109,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <img alt="Step Two Pic" src={stepThreePic} />
+            <img className="dropShadow" alt="Step Three Pic" src={stepThreePic} />
           </Cell>
           <Cell middle>
             <div>
@@ -136,7 +138,7 @@ const IndexPage = () => (
             </div>
           </Cell>
           <Cell middle>
-            <img alt="Step Two Pic" src={stepFourPic} />
+            <img className="dropShadow" alt="Step Four Pic" src={stepFourPic} />
           </Cell>
         </Grid>
       </InnerContainerBoxed>
