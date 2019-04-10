@@ -143,7 +143,7 @@ const IndexPage = () => (
     </InnerContainerFull>
     <InnerContainerFull>
       <div className="fullHeader">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <p>
             <label htmlFor="name">
               Your Name: <input type="text" name="name" />
