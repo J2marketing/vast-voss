@@ -24,7 +24,7 @@ const IndexPage = () => (
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull iswavyBott bgColor={COLOR.VOSS_GREEN_LIGHT}>
+    <InnerContainerFull bgColor={COLOR.VOSS_GREEN_LIGHT}>
       <InnerContainerBoxed padding="5rem 1rem">
         <Grid columns="repeat(auto-fit,minmax(200px,1fr))" gap="30px">
           <Cell>
