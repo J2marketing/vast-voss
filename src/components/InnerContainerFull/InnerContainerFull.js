@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { COLOR } from '../../constants';
 import waveDarkGreen from '../../assets/waveDarkGreen.svg';
+import waveGrey from '../../assets/waveGrey.svg';
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -12,56 +13,49 @@ const Wrapper = styled.div`
   color: ${props => props.textColor};
   padding: 0rem 0rem;
   ${({ isDebug }) => isDebug && 'background-color: orange;'}
-  &:before, &:after {
-    ${({ isWavyTop, isWavyBottom }) =>
-      (isWavyTop || isWavyBottom) &&
-      `
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background-size: 100px 100%;
-    `}
-  }
-  &:before {
-    ${({ isWavyTop }) =>
-      isWavyTop &&
-      `
-      content:"";
-      
-      display:inline-block;
-      background-image: url(https://bitbucket-marketing-cdn.atlassian.com/dam/jcr:cd01b96d-381e-49ab-a487-c7d1df92cf59/atlassian%20wave%20adg30524.svg);
-    `}
-  }
-  &:after {
-    ${({ isWavyBottom }) =>
-      isWavyBottom &&
-      `
-      bottom: 0;
-      content: "";
-      height:20px;
-      background: url(https://goj2.com/wp-content/uploads/2018/08/wave.svg) repeat-x; 
-      transform: rotateX(180deg);
-    `}
-  }
 `;
 
 const TopWave = styled.div`
-  height: 0%;
+  height: 198px;
   width: 100%;
   z-index: 100;
-  position: absolute;
+  overflow: hidden;
+  position: relative;
 `;
 
 const BottomWave = styled.div`
-  height: 0%;
+  height: 198px;
   width: 100%;
-  position: absolute;
+  position: relative;
+  overflow: hidden;
   & div {
     transform: rotate(180deg);
   }
 `;
 
-const WaveImgGreen = styled.div`
+const WaveImgGreenTop = styled.div`
+  height: 198px;
+  position: absolute;
+  background-position: top center;
+  background-repeat: repeat-x;
+  width: 6400px;
+  overflow-y: hidden;
+  bottom: 0;
+  background-color: ${COLOR.WHITE};
+  background-image: url(${waveDarkGreen});
+  animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+`;
+
+const WaveImgGreenBottom = styled.div`
   height: 198px;
   position: absolute;
   background-position: top center;
@@ -82,25 +76,87 @@ const WaveImgGreen = styled.div`
   }
 `;
 
-const InnerContainerFull = ({ isWavyBottom, isWavyTop, children, ...props }) => (
+const WaveImgGreyTop = styled.div`
+  height: 198px;
+  position: absolute;
+  background-position: top center;
+  background-repeat: repeat-x;
+  width: 6400px;
+  overflow-y: hidden;
+  bottom: 0;
+  background-color: ${COLOR.WHITE};
+  background-image: url(${waveGrey});
+  animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+`;
+
+const WaveImgGreyBottom = styled.div`
+  height: 198px;
+  position: absolute;
+  background-position: top center;
+  background-repeat: repeat-x;
+  width: 6400px;
+  overflow-y: hidden;
+  background-color: ${COLOR.WHITE};
+  background-image: url(${waveGrey});
+  animation: wave 3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+`;
+
+const InnerContainerFull = ({
+  isWavyBottomGreen,
+  isWavyTopGreen,
+  isWavyTopGrey,
+  isWavyBottomGrey,
+  children,
+  ...props
+}) => (
   <Wrapper {...props}>
-    {isWavyTop && (
+    {isWavyTopGreen && (
       <TopWave>
-        <WaveImgGreen />
+        <WaveImgGreenTop />
       </TopWave>
-    )}{' '}
-    {children}{' '}
-    {isWavyBottom && (
+    )}
+    {isWavyTopGrey && (
+      <TopWave>
+        <WaveImgGreyTop />
+      </TopWave>
+    )}
+    {children}
+    {isWavyBottomGreen && (
       <BottomWave>
-        <WaveImgGreen />
+        <WaveImgGreenBottom />
+      </BottomWave>
+    )}
+    {isWavyBottomGrey && (
+      <BottomWave>
+        <WaveImgGreyBottom />
       </BottomWave>
     )}
   </Wrapper>
 );
 
 InnerContainerFull.defaultProps = {
-  isWavyTop: null,
-  isWavyBottom: null,
+  isWavyTopGreen: null,
+  isWavyBottomGreen: null,
+  isWavyTopGrey: null,
+  isWavyBottomGrey: null,
   textColor: COLOR.WHITE,
   bgColor: COLOR.VOSS_GREEN,
   children: null,
@@ -108,8 +164,10 @@ InnerContainerFull.defaultProps = {
 };
 
 InnerContainerFull.propTypes = {
-  isWavyTop: PropTypes.element,
-  isWavyBottom: PropTypes.element,
+  isWavyTopGreen: PropTypes.element,
+  isWavyBottomGreen: PropTypes.element,
+  isWavyTopGrey: PropTypes.element,
+  isWavyBottomGrey: PropTypes.element,
   textColor: PropTypes.string,
   bgColor: PropTypes.string,
   children: PropTypes.element,

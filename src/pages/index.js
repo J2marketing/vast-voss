@@ -60,13 +60,13 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull isWavyBottom bgColor={COLOR.VOSS_GREEN}>
+    <InnerContainerFull isWavyBottomGreen bgColor={COLOR.VOSS_GREEN}>
       <InnerContainerBoxed>
         <h2 className="largeHeader">THE PROCESS</h2>
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
-      <InnerContainerBoxed padding="5rem 1rem">
+      <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <img alt="Step One Pic" src={stepOnePic} />
@@ -84,8 +84,8 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
-      <InnerContainerBoxed padding="5rem 1rem">
+    <InnerContainerFull isWavyTopGrey isWavyBottomGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
+      <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <div>
@@ -104,7 +104,7 @@ const IndexPage = () => (
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.WHITE}>
-      <InnerContainerBoxed padding="5rem 1rem">
+      <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <img alt="Step Two Pic" src={stepThreePic} />
@@ -122,8 +122,8 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
-      <InnerContainerBoxed padding="5rem 1rem">
+    <InnerContainerFull isWavyTopGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
+      <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <div>
