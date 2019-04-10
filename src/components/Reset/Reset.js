@@ -174,20 +174,9 @@ export const ResetStyle = createGlobalStyle`
     animation: floating 4s ease-in-out infinite;
   }
 
-  .floating2{
-    animation: floating2 4s ease-in-out infinite;
-  }
-
   @keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
-  }
-
-  @keyframes floating2 {
-    from { transform: translate(0,  15px); }
-    65%  { transform: translate(0, 0px); }
-    to   { transform: translate(0, 15px); }    
-  }
-  
+    from { box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)}; transform: translate(0,  0px); }
+    65%  { box-shadow: 5px 5px 5px ${darken(0.2, COLOR.GREY)}; transform: translate(0, 15px); }
+    to   { box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)}; transform: translate(0, -0px); }    
+  } 
 `;

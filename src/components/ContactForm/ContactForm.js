@@ -6,10 +6,18 @@ const ContactFormWrapper = styled.div`
   margin: 0 auto;
   max-width: 100vw;
   padding: 0px;
+  & form {
+    width: 100%;
+  }
+  & input,
+  & textarea {
+    width: 100%;
+  }
 `;
 
 const ContactForm = ({ ...props }) => (
   <ContactFormWrapper {...props}>
+    <h3>Contact Us</h3>
     <form method="POST" action="/page-2" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
       <div className="field half first">
