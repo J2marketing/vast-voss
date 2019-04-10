@@ -2,14 +2,15 @@ import React from 'react';
 import { Cell, Grid } from 'styled-css-grid';
 import { Layout } from '../components/Layout';
 import { Button } from '../components/Button';
+import { InnerContainerBoxed } from '../components/InnerContainerBoxed';
+import { InnerContainerFull } from '../components/InnerContainerFull';
+import { ContactForm } from '../components/ContactForm';
 import { transparent, COLOR, themeNormal } from '../constants';
 import vossLogo from '../assets/vossHeaderLogo.png';
 import stepOnePic from '../assets/step1.jpg';
 import stepTwoPic from '../assets/step2.jpg';
 import stepThreePic from '../assets/step3.jpg';
 import stepFourPic from '../assets/step4.jpg';
-import { InnerContainerBoxed } from '../components/InnerContainerBoxed';
-import { InnerContainerFull } from '../components/InnerContainerFull';
 
 const IndexPage = () => (
   <Layout>
@@ -72,7 +73,7 @@ const IndexPage = () => (
             <img className="floating dropShadow" alt="Step One Pic" src={stepOnePic} />
           </Cell>
           <Cell middle>
-            <div  >
+            <div>
               <h2>STEP 1</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -88,7 +89,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div  >
+            <div>
               <h2>STEP 2</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -110,7 +111,7 @@ const IndexPage = () => (
             <img className="floating dropShadow" alt="Step Three Pic" src={stepThreePic} />
           </Cell>
           <Cell middle>
-            <div  >
+            <div>
               <h2>STEP 3</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -126,7 +127,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="8rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <div  >
+            <div>
               <h2>STEP 4</h2>
               <p>
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
@@ -146,35 +147,7 @@ const IndexPage = () => (
         <div className="heroImage">
           <img alt="VOSS Oil spill solutions logo" src={vossLogo} />
         </div>
-        <form method="POST" action="/page-2" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="field half first">
-            <label htmlFor="name">
-              Name
-              <input type="text" name="name" id="name" />
-            </label>
-          </div>
-          <div className="field half">
-            <label htmlFor="email">
-              Email
-              <input type="email" name="email" id="email" />
-            </label>
-          </div>
-          <div className="field">
-            <label htmlFor="message">
-              Message
-              <textarea name="message" id="message" rows="6" />
-            </label>
-          </div>
-          <ul className="actions">
-            <li>
-              <input type="submit" value="Send Message" className="special" />
-            </li>
-            <li>
-              <input type="reset" value="Clear" />
-            </li>
-          </ul>
-        </form>
+        <ContactForm />
       </div>
     </InnerContainerFull>
   </Layout>
