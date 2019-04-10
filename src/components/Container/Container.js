@@ -17,7 +17,7 @@ Container.defaultProps = {
 };
 
 Container.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
   isDebug: PropTypes.bool,
 };
 

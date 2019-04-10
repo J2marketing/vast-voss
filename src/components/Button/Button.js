@@ -13,7 +13,7 @@ export const Button = ({ children, themeBtn, ...props }) => (
 );
 
 Button.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
   themeBtn: PropTypes.shape({
     main: PropTypes.string.isRequired,
     border: PropTypes.string.isRequired,
