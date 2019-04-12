@@ -34,7 +34,7 @@ class Header extends React.Component {
     const { menuShown } = this.state;
     return (
       <HeaderWrapper>
-        <InnerContainerBoxed>
+        <InnerContainerBoxed padding="0rem 0rem">
           <HeaderInner>
             <Link to="/">
               <SiteImg alt="VOSS Oil Spill Solutions Logo Full" src={vossLogoWhite} />

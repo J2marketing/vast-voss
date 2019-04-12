@@ -192,7 +192,7 @@ export const ResetStyle = createGlobalStyle`
   }
 
   .fullHeader{
-    min-height:85vh;
+    min-height:90vh;
     transition: min-height 20000s steps(1);
     background-image: url(${vossBgHeaderDarkNoBoat});
     background-size: cover;
@@ -210,7 +210,7 @@ export const ResetStyle = createGlobalStyle`
   }
   .buttonCTAs{
     display:flex;
-    & button{
+    & *{
       margin:10px;
     }
     @media only screen and (max-width:980px){

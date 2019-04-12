@@ -5,13 +5,14 @@ import { COLOR } from '../../constants';
 export const HeaderWrapper = styled.div`
   background-color: ${COLOR.VOSS_GREEN};
   border-bottom: 0.2rem solid ${darken(0.1, COLOR.VOSS_GREEN)};
+  max-height: 10vh;
 `;
 
 export const HeaderInner = styled.div`
   display: flex;
   flex-flow: nowrap row;
   align-items: center;
-  max-height: 15vh;
+  height: 10vh;
   font-weight: 900;
 `;
 

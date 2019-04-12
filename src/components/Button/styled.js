@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ButtonWrapper = styled.button`
+export const ButtonWrapper = styled.a`
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 20px;

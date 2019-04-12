@@ -7,7 +7,7 @@ const ContactFormWrapper = styled.div`
   margin: 0 auto;
   width: 60vw;
   max-width: 100vw;
-  padding: 0px;
+  padding: 20px;
   & form {
     font-size: 1.1rem;
     width: 100%;
@@ -49,7 +49,7 @@ const ContactFormWrapper = styled.div`
 const ContactForm = ({ ...props }) => (
   <ContactFormWrapper {...props}>
     <h3 className="largeHeader">CONTACT US</h3>
-    <form method="POST" action="/page-2" data-netlify="true" netlify-honeypot="bot-field">
+    <form method="POST" action="/message-sent" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
       <div className="field half first">
         <label htmlFor="name">
