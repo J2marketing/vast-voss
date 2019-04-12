@@ -62,7 +62,8 @@ class ContactForm extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'VOSS Leads', ...this.state }),
     })
-      .then((window.location.href = '/message-sent'))
+      .then(() => window.location.replace('/message-sent'))
+      // eslint-disable-next-line no-console
       .catch(error => console.log(`The form submission returned the following error: ${error}`));
 
     e.preventDefault();
