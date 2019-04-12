@@ -12,8 +12,19 @@ import { NAV_ITEMS } from '../../constants';
 // This needs changed the second this is more than a one page site. Need to find a better way to inject global styles. Better yet, TODO: make a seperate header styled component. Allow it to accept image prop.
 const GlobalStyle = createGlobalStyle`
   .fullHeader{
-    min-height:85vh;
-    min-height: -webkit-fill-available;
+    height:85vh;
+    @media (max-device-aspect-ratio: 3/4) {
+      height: calc(100vw * 1.333 - 9%);
+    }
+    @media (max-device-aspect-ratio: 2/3) {
+      height: calc(100vw * 1.5 - 9%);
+    }
+    @media (max-device-aspect-ratio: 10/16) {
+      height: calc(100vw * 1.6 - 9%);
+    }
+    @media (max-device-aspect-ratio: 9/16) {
+      height: calc(100vw * 1.778 - 9%);
+    }
     background-image: url(${vossBgHeaderDarkNoBoat});
     background-size: cover;
     background-position: center;
