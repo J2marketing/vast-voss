@@ -116,7 +116,7 @@ class ContactForm extends React.Component {
               />
             </label>
           </div>
-          <input type="submit" value="SEND MESSAGE" className="special" />
+          <button type="submit">Send</button>
         </form>
       </ContactFormWrapper>
     );
