@@ -13,6 +13,7 @@ import { NAV_ITEMS } from '../../constants';
 const GlobalStyle = createGlobalStyle`
   .fullHeader{
     min-height:85vh;
+    min-height: -webkit-fill-available;
     background-image: url(${vossBgHeaderDarkNoBoat});
     background-size: cover;
     background-position: center;

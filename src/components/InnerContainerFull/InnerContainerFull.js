@@ -24,7 +24,7 @@ const TopWave = styled.div`
 `;
 
 const BottomWave = styled.div`
-  height: 100px;
+  height: 104px;
   width: 100%;
   position: relative;
   overflow: hidden;

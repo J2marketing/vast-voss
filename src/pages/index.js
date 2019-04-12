@@ -25,7 +25,7 @@ const IndexPage = () => (
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
       <InnerContainerBoxed>
         <h2 className="largeHeader">WHAT IS IT?</h2>
         <p className="ctaText">
@@ -35,7 +35,7 @@ const IndexPage = () => (
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
-      <InnerContainerBoxed padding="5rem 1rem">
+      <InnerContainerBoxed padding="3rem 1rem">
         <Grid columns="repeat(auto-fit,minmax(200px,1fr))" gap="30px">
           <Cell>
             <div>
@@ -154,7 +154,7 @@ const IndexPage = () => (
         </Grid>
       </InnerContainerBoxed>
     </InnerContainerFull>
-    <InnerContainerFull>
+    <InnerContainerFull id="contact">
       <div className="fullHeader">
         <div className="heroImage">
           <img alt="VOSS Oil spill solutions logo" src={vossLogo} />

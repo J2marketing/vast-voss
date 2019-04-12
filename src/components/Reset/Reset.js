@@ -166,6 +166,12 @@ export const ResetStyle = createGlobalStyle`
     font-size:3.2em;
   }
 
+  @media only screen and (max-width: 500px){
+    .largeHeader{
+      font-size:2.3em;
+    }
+  }
+
   .dropShadow{
     box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
   }
