@@ -60,9 +60,9 @@ class ContactForm extends React.Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
+      body: encode({ 'form-name': 'VOSS Leads', ...this.state }),
     })
-      .then((window.location.href = '/message-sent'))
+      .then(() => alert('submitted'))
       .catch(error => console.log(error));
 
     e.preventDefault();
