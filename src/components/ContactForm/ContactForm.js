@@ -75,7 +75,7 @@ class ContactForm extends React.Component {
     return (
       <ContactFormWrapper>
         <h3 className="largeHeader">CONTACT US</h3>
-        <form data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+        <form name="VOSS Leads" data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="VOSS Leads" />
           <div className="field half first">
             <label htmlFor="name">
@@ -116,7 +116,7 @@ class ContactForm extends React.Component {
               />
             </label>
           </div>
-          <button type="submit">Send</button>
+          <input type="submit" value="SEND MESSAGE" className="special" />
         </form>
       </ContactFormWrapper>
     );
