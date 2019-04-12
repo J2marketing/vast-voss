@@ -36,14 +36,14 @@ export const MenuIcon = styled.img`
       color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
-  .menuFunc{
+  #menuFunc{
     display:none;
   }
 `;
 
 export const MenuIconContainer = styled.a`
   margin-left: auto;
-  z-index:20;
+  z-index:22;
   @media only screen and (max-width:980px){
     display:flex;
   }
@@ -59,7 +59,7 @@ export const MenuIconContainer = styled.a`
       color: ${darken(0.2, COLOR.LIGHTGREY)};
     }
   }
-  .menuFunc{
+  #menuFunc{
     display:none;
   }
   &.active{
@@ -97,6 +97,7 @@ export const MobileNavigation = styled.div`
   @media only screen and (min-width: 980px) {
     display: none;
   }
+  z-index: 20;
   margin-left: auto;
   display: flex;
   position: fixed;

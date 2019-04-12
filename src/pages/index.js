@@ -21,12 +21,14 @@ const IndexPage = () => (
           <img className="headerLogo" alt="VOSS Oil spill solutions logo" src={vossLogo} />
         </div>
         <div className="buttonCTAs">
-          <Button themeBtn={transparent}>WHAT IS IT?</Button>
+          <Button themeBtn={transparent} href="#explanation">
+            WHAT IS IT?
+          </Button>
           <Button themeBtn={transparent}>THE PROCESS</Button>
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
+    <InnerContainerFull id="explanation" textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
       <InnerContainerBoxed>
         <h2 className="largeHeader">WHAT IS IT?</h2>
         <p className="ctaText">
@@ -76,7 +78,9 @@ const IndexPage = () => (
     </InnerContainerFull>
     <InnerContainerFull isWavyBottomGreen bgColor={COLOR.VOSS_GREEN}>
       <InnerContainerBoxed>
-        <h2 className="largeHeader">THE PROCESS</h2>
+        <h2 className="largeHeader" id="process">
+          THE PROCESS
+        </h2>
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>

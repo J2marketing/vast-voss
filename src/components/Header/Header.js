@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { InnerContainerBoxed } from '../InnerContainerBoxed';
 import {
@@ -11,6 +10,7 @@ import {
   SiteImg,
   MenuIcon,
 } from './styled';
+import { NAV_ITEMS } from '../../constants';
 import menuIcon from '../../assets/menuIcon.png';
 import vossLogoWhite from '../../assets/vossLogoWhite.png';
 
@@ -30,7 +30,22 @@ class Header extends React.Component {
   }
 
   render() {
-    const { navigation } = this.props;
+    const navigation = NAV_ITEMS.map(({ to, href, label }) => {
+      if (href) {
+        return (
+          <a key={label} href={href} onClick={this.handleClick}>
+            {label}
+          </a>
+        );
+      }
+
+      return (
+        <Link key={label} to={to} onClick={this.handleClick}>
+          {label}
+        </Link>
+      );
+    });
+
     const { menuShown } = this.state;
     return (
       <HeaderWrapper>
@@ -44,7 +59,7 @@ class Header extends React.Component {
                 {navigation}
               </Navigation>
             )}
-            <MenuIconContainer className={menuShown ? 'menuFunc active' : 'menuFunc'} onClick={this.handleClick}>
+            <MenuIconContainer id="menuFunc" className={menuShown ? 'active' : ''} onClick={this.handleClick}>
               <MenuIcon className="menuIcon" src={menuIcon} />
             </MenuIconContainer>
             {navigation && (
@@ -62,15 +77,5 @@ class Header extends React.Component {
     );
   }
 }
-
-Header.propTypes = {
-  /** Title for the site */
-  /** Array of navigation items */
-  navigation: PropTypes.arrayOf(PropTypes.node),
-};
-
-Header.defaultProps = {
-  navigation: null,
-};
 
 export { Header };

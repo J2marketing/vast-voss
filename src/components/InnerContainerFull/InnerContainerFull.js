@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 const TopWave = styled.div`
   height: 100px;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   overflow: hidden;
   position: relative;
 `;
@@ -28,6 +28,7 @@ const BottomWave = styled.div`
   width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 10;
   & div {
     transform: rotate(180deg);
   }
@@ -39,7 +40,7 @@ const WaveImgGreenTop = styled.div`
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3200px;
+  width: 3800px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
@@ -69,7 +70,7 @@ const WaveImgGreenBottom = styled.div`
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3200px;
+  width: 3800px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
@@ -96,7 +97,7 @@ const WaveImgGreyTop = styled.div`
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3200px;
+  width: 3800px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
@@ -126,7 +127,7 @@ const WaveImgGreyBottom = styled.div`
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3200px;
+  width: 3800px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
@@ -192,10 +193,10 @@ InnerContainerFull.defaultProps = {
 };
 
 InnerContainerFull.propTypes = {
-  isWavyTopGreen: PropTypes.element,
-  isWavyBottomGreen: PropTypes.element,
-  isWavyTopGrey: PropTypes.element,
-  isWavyBottomGrey: PropTypes.element,
+  isWavyTopGreen: PropTypes.bool,
+  isWavyBottomGreen: PropTypes.bool,
+  isWavyTopGrey: PropTypes.bool,
+  isWavyBottomGrey: PropTypes.bool,
   textColor: PropTypes.string,
   bgColor: PropTypes.string,
   children: PropTypes.element,

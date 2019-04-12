@@ -19,7 +19,7 @@ InnerContainerBoxed.defaultProps = {
 
 InnerContainerBoxed.propTypes = {
   padding: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   isDebug: PropTypes.bool,
 };
 

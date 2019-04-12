@@ -213,7 +213,7 @@ export const ResetStyle = createGlobalStyle`
     & *{
       margin:10px;
     }
-    @media only screen and (max-width:980px){
+    @media only screen and (max-width:580px){
       flex-direction:column;
       max-width:70vw;
     }
