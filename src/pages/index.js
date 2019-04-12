@@ -20,12 +20,21 @@ const IndexPage = () => (
           <img alt="VOSS Oil spill solutions logo" src={vossLogo} />
         </div>
         <div className="buttonCTAs">
-          <Button themeBtn={transparent}>Explore Solutions</Button>
-          <Button themeBtn={transparent}>Our Company</Button>
+          <Button themeBtn={transparent}>WHAT IS IT?</Button>
+          <Button themeBtn={transparent}>THE PROCESS</Button>
         </div>
       </div>
     </InnerContainerFull>
-    <InnerContainerFull bgColor={COLOR.VOSS_GREEN_LIGHT}>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
+      <InnerContainerBoxed>
+        <h2 className="largeHeader">WHAT IS IT?</h2>
+        <p className="ctaText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a ligula odio. Nam porta suscipit arcu non
+          malesuada.
+        </p>
+      </InnerContainerBoxed>
+    </InnerContainerFull>
+    <InnerContainerFull textColor={COLOR.VOSS_GREEN} bgColor={COLOR.LIGHTGREY}>
       <InnerContainerBoxed padding="5rem 1rem">
         <Grid columns="repeat(auto-fit,minmax(200px,1fr))" gap="30px">
           <Cell>
@@ -37,6 +46,7 @@ const IndexPage = () => (
                 orci, vitae faucibus tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet
                 dignissim sapien at laoreet.
               </p>
+              <Button theme={themeNormal}>Next</Button>
             </div>
           </Cell>
           <Cell>
@@ -47,6 +57,7 @@ const IndexPage = () => (
                 non malesuada. Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar
                 orci, vitae faucibus tortor.
               </p>
+              <Button theme={themeNormal}>Next</Button>
             </div>
           </Cell>
           <Cell>
@@ -56,6 +67,7 @@ const IndexPage = () => (
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
                 tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim sapien at laoreet.
               </p>
+              <Button theme={themeNormal}>Next</Button>
             </div>
           </Cell>
         </Grid>
@@ -86,7 +98,7 @@ const IndexPage = () => (
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull isWavyTopGrey isWavyBottomGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
-      <InnerContainerBoxed padding="8rem 1rem">
+      <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <div>
@@ -124,7 +136,7 @@ const IndexPage = () => (
       </InnerContainerBoxed>
     </InnerContainerFull>
     <InnerContainerFull isWavyTopGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
-      <InnerContainerBoxed padding="8rem 1rem">
+      <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
             <div>
@@ -150,6 +162,7 @@ const IndexPage = () => (
         <ContactForm />
       </div>
     </InnerContainerFull>
+    <InnerContainerFull>Footer</InnerContainerFull>
   </Layout>
 );
 

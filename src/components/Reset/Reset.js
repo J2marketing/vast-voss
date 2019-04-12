@@ -171,12 +171,10 @@ export const ResetStyle = createGlobalStyle`
   }
 
   .floating{
-    animation: floating 4s ease-in-out infinite;
   }
 
-  @keyframes floating {
-    from { box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)}; transform: translate(0,  0px); }
-    65%  { box-shadow: 5px 5px 5px ${darken(0.2, COLOR.GREY)}; transform: translate(0, 15px); }
-    to   { box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)}; transform: translate(0, -0px); }    
-  } 
+  .ctaText{
+    text-align:center;
+    font-size:1.4rem;
+  }
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import { InnerContainerBoxed } from '../InnerContainerBoxed';
 import {
   MenuIconContainer,
@@ -35,7 +36,9 @@ class Header extends React.Component {
       <HeaderWrapper>
         <InnerContainerBoxed>
           <HeaderInner>
-            <SiteImg alt="VOSS Oil Spill Solutions Logo Full" src={vossLogoWhite} />
+            <Link to="/">
+              <SiteImg alt="VOSS Oil Spill Solutions Logo Full" src={vossLogoWhite} />
+            </Link>
             {navigation && (
               <Navigation role="tablist" id="desktopNav">
                 {navigation}

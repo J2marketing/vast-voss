@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const TopWave = styled.div`
-  height: 198px;
+  height: 100px;
   width: 100%;
   z-index: 100;
   overflow: hidden;
@@ -24,7 +24,7 @@ const TopWave = styled.div`
 `;
 
 const BottomWave = styled.div`
-  height: 198px;
+  height: 100px;
   width: 100%;
   position: relative;
   overflow: hidden;

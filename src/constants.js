@@ -10,11 +10,11 @@ export const COLOR = {
 };
 
 export const NAV_ITEMS = [
-  { to: '/', label: 'Home' },
-  { to: '/oldindex', label: 'Introduction' },
-  { to: '/page-2', label: 'Mission' },
-  { to: '/mdx-example', label: 'Technology' },
-  { href: '/docs/', label: 'Contact' },
+  { to: '/#', label: 'HOME' },
+  { to: '#explanation', label: 'EXPLANATION' },
+  { to: '#process', label: 'PROCESS' },
+  { to: '#resources', label: 'RESOURCES' },
+  { href: '#contact', label: 'CONTACT' },
 ];
 
 export const themeNormal = {
