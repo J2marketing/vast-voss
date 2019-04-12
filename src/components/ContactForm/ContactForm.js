@@ -75,7 +75,7 @@ class ContactForm extends React.Component {
     return (
       <ContactFormWrapper>
         <h3 className="largeHeader">CONTACT US</h3>
-        <form onSubmit={this.handleSubmit}>
+        <form data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <div className="field half first">
             <label htmlFor="name">
