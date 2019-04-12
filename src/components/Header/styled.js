@@ -101,7 +101,7 @@ export const MobileNavigation = styled.div`
   margin-left: auto;
   display: flex;
   position: fixed;
-  background-color: ${COLOR.VOSS_GREEN_TRANSPARENT};
+  background-color: ${COLOR.VOSS_GREEN};
   top: 0;
   left: 0;
   margin: 0;
