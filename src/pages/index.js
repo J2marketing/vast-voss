@@ -146,7 +146,9 @@ const IndexPage = () => (
                 Curabitur tincidunt mauris id nibh ullamcorper blandit eu id est. Phasellus nec pulvinar faucibus
                 tortor. Integer ullamcorper lectus non aliquam laoreet. Vestibulum aliquet dignissim laoreet.
               </p>
-              <Button theme={themeNormal}>Next</Button>
+              <Button theme={themeNormal} href="/message-sent">
+                Next
+              </Button>
             </div>
           </Cell>
           <Cell middle>
