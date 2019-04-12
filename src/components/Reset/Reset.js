@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { darken, rgba } from 'polished';
-
+import vossBgHeaderDarkNoBoat from '../../assets/vossBgHeaderDarkNoBoat.jpg';
 import { COLOR } from '../../constants';
 
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -172,15 +172,61 @@ export const ResetStyle = createGlobalStyle`
     }
   }
 
-  .dropShadow{
-    box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
+  .smallLogo{
+    max-width:150px;
+    margin:0.2rem 0.2rem 0.2rem 0.5rem; 
   }
 
-  .floating{
+  .footerImg{
+    max-width:2rem;
+    margin:0.2rem 0.2rem 0.2rem 0.5rem; 
+  }
+
+  .dropShadow{
+    box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
   }
 
   .ctaText{
     text-align:center;
     font-size:1.4rem;
+  }
+
+  .fullHeader{
+    min-height:85vh;
+    transition: min-height 20000s steps(1);
+    background-image: url(${vossBgHeaderDarkNoBoat});
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .fullHeader .headerLogo{
+    max-width:50vw;
+    @media only screen and (max-width:980px){
+      max-width:80vw;
+    }
+  }
+  .buttonCTAs{
+    display:flex;
+    & button{
+      margin:10px;
+    }
+    @media only screen and (max-width:980px){
+      flex-direction:column;
+      max-width:70vw;
+    }
+  }
+  .footerText{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    & p{
+      margin-bottom:0px;
+    }
+  }
+  .debug{
+    background-color:red;
   }
 `;

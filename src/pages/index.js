@@ -7,6 +7,7 @@ import { InnerContainerFull } from '../components/InnerContainerFull';
 import { ContactForm } from '../components/ContactForm';
 import { transparent, COLOR, themeNormal } from '../constants';
 import vossLogo from '../assets/vossHeaderLogo.png';
+import vossIcon from '../assets/vossIcon.png';
 import stepOnePic from '../assets/step1.jpg';
 import stepTwoPic from '../assets/step2.jpg';
 import stepThreePic from '../assets/step3.jpg';
@@ -17,7 +18,7 @@ const IndexPage = () => (
     <InnerContainerFull>
       <div className="fullHeader">
         <div className="heroImage">
-          <img alt="VOSS Oil spill solutions logo" src={vossLogo} />
+          <img className="headerLogo" alt="VOSS Oil spill solutions logo" src={vossLogo} />
         </div>
         <div className="buttonCTAs">
           <Button themeBtn={transparent}>WHAT IS IT?</Button>
@@ -157,12 +158,17 @@ const IndexPage = () => (
     <InnerContainerFull id="contact">
       <div className="fullHeader">
         <div className="heroImage">
-          <img alt="VOSS Oil spill solutions logo" src={vossLogo} />
+          <img className="smallLogo" alt="VOSS Oil spill solutions logo" src={vossIcon} />
         </div>
         <ContactForm />
       </div>
     </InnerContainerFull>
-    <InnerContainerFull>Footer</InnerContainerFull>
+    <InnerContainerFull>
+      <div className="footerText">
+        <img className="footerImg" alt="VOSS Oil spill solutions logo" src={vossIcon} />
+        <p>© VAST Oil Spill Solutions Inc.</p>
+      </div>
+    </InnerContainerFull>
   </Layout>
 );
 

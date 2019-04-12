@@ -32,17 +32,19 @@ const BottomWave = styled.div`
     transform: rotate(180deg);
   }
 `;
-// TODO: Refactor these next 4 components into one that takes variables.
+// TODO: Refactor these next 4 components into one that takes variables. not very DRY
 const WaveImgGreenTop = styled.div`
+  will-change: transform;
   height: 198px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 6400px;
+  width: 3200px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
+  transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 3500ms;
@@ -51,7 +53,6 @@ const WaveImgGreenTop = styled.div`
     animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 2000ms;
   }
-  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -63,21 +64,22 @@ const WaveImgGreenTop = styled.div`
 `;
 
 const WaveImgGreenBottom = styled.div`
+  will-change: transform;
   height: 198px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 6400px;
+  width: 3200px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
+  transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @media only screen and (max-width: 500px) {
     animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
-  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -89,15 +91,17 @@ const WaveImgGreenBottom = styled.div`
 `;
 
 const WaveImgGreyTop = styled.div`
+  will-change: transform;
   height: 198px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 6400px;
+  width: 3200px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
+  transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 3500ms;
@@ -106,7 +110,6 @@ const WaveImgGreyTop = styled.div`
     animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 2000ms;
   }
-  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -118,21 +121,22 @@ const WaveImgGreyTop = styled.div`
 `;
 
 const WaveImgGreyBottom = styled.div`
+  will-change: transform;
   height: 198px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 6400px;
+  width: 3200px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
+  transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @media only screen and (max-width: 500px) {
     animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
-  -webkit-transform: translate3d(0, 0, 0);
   @keyframes wave {
     0% {
       margin-left: 0;
