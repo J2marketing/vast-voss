@@ -21,6 +21,7 @@ const TopWave = styled.div`
   z-index: 10;
   overflow: hidden;
   position: relative;
+  transform: translate3d(0,0,0);
 `;
 
 const BottomWave = styled.div`
@@ -29,6 +30,7 @@ const BottomWave = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 10;
+  transform: translate3d(0,0,0);
   & div {
     transform: rotate(180deg);
   }

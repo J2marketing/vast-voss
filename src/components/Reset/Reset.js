@@ -193,7 +193,7 @@ export const ResetStyle = createGlobalStyle`
   }
 
   .fullHeader{
-    min-height:90vh;
+    min-height:95vh;
     transition: min-height 20000s steps(1);
     background-image: url(${vossBgHeaderDarkNoBoat});
     background-size: cover;

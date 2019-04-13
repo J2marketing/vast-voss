@@ -1,11 +1,20 @@
 import React from 'react';
-
+import { InnerContainerFull } from '../components/InnerContainerFull';
+import { Button } from '../components/Button';
 import { Layout } from '../components/Layout';
+import { transparent } from '../constants';
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <InnerContainerFull id="contact">
+      <div className="fullHeader fullPage">
+        <h3 className="largeHeader">Woah there, looks like you found a page that doesn't exist!</h3>
+        <Button theme={transparent} href="/">
+          {' '}
+          Back Home
+        </Button>
+      </div>
+    </InnerContainerFull>
   </Layout>
 );
 
