@@ -99,6 +99,7 @@ export const ResetStyle = createGlobalStyle`
     font-size: 0.8rem;
   }
   img{
+    max-width:100%;
     align-self:center;
   }
   p {
