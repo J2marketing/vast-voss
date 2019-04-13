@@ -4,6 +4,7 @@ export const ButtonWrapper = styled.a`
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 20px;
+  text-align:center;
   padding: 0.4rem 0.8rem;
   border-radius: 0px;
   border: 2px solid ${props => props.theme.border};
