@@ -64,7 +64,7 @@ export const ResetStyle = createGlobalStyle`
   }
 
   body {
-    @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
     font-family: 'Lato', sans-serif;
     background: ${COLOR.LIGHTGREY};
   }
@@ -180,7 +180,7 @@ export const ResetStyle = createGlobalStyle`
 
   .footerImg{
     max-width:2rem;
-    margin:0.2rem 0.2rem 0.2rem 0.5rem; 
+    margin:0.5rem;
   }
 
   .dropShadow{
@@ -207,6 +207,7 @@ export const ResetStyle = createGlobalStyle`
     max-width:50vw;
     @media only screen and (max-width:980px){
       max-width:80vw;
+      max-height:20vw;
     }
   }
   .buttonCTAs{
@@ -229,5 +230,13 @@ export const ResetStyle = createGlobalStyle`
   }
   .debug{
     background-color:red;
+  }
+  @media only screen and (max-width:640px){
+    .firstOnMobile{
+      order:0;
+    }
+    .secondOnMobile{
+      order:2;
+    }
   }
 `;

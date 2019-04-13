@@ -5,20 +5,21 @@ import { COLOR } from '../../constants';
 export const HeaderWrapper = styled.div`
   background-color: ${COLOR.VOSS_GREEN};
   border-bottom: 0.2rem solid ${darken(0.1, COLOR.VOSS_GREEN)};
-  max-height: 10vh;
+  max-height: 15vh;
+  min-height: 82px;
 `;
 
 export const HeaderInner = styled.div`
   display: flex;
   flex-flow: nowrap row;
   align-items: center;
-  height: 10vh;
-  font-weight: 900;
+  max-height: 15vh;
+  min-height: 82px;
+  font-weight: 700;
 `;
 
 export const SiteImg = styled.img`
-  margin: 0;
-  max-height: 60px;
+  margin: 1vh;
 `;
 
 export const MenuIcon = styled.img`
@@ -115,9 +116,9 @@ export const MobileNavigation = styled.div`
 
   & > * {
     font-size: 2em;
-    opacity: 1;
+    opacity: 0;
     color: ${COLOR.LIGHTGREY};
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:focus,
     &:hover {
       color: ${darken(0.2, COLOR.LIGHTGREY)};
@@ -125,6 +126,7 @@ export const MobileNavigation = styled.div`
   }
 
   &.active > * {
+    transition:all 0.2s ease-in-out;
     opacity: 1;
   }
 

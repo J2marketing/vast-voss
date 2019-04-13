@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonWrapper = styled.a`
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 20px;
   text-align:center;
   padding: 0.4rem 0.8rem;

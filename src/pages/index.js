@@ -105,7 +105,7 @@ const IndexPage = () => (
     <InnerContainerFull isWavyTopGrey isWavyBottomGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
-          <Cell middle>
+          <Cell middle className="secondOnMobile">
             <div>
               <h2>STEP 2</h2>
               <p>
@@ -115,7 +115,7 @@ const IndexPage = () => (
               <Button theme={themeNormal}>Next</Button>
             </div>
           </Cell>
-          <Cell middle>
+          <Cell middle className="firstOnMobile">
             <img className="floating dropShadow" alt="Step Two Pic" src={stepTwoPic} />
           </Cell>
         </Grid>
@@ -143,7 +143,7 @@ const IndexPage = () => (
     <InnerContainerFull isWavyTopGrey textColor={COLOR.VOSS_GREEN} bgColor={COLOR.GREY}>
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
-          <Cell middle>
+          <Cell middle className="secondOnMobile">
             <div>
               <h2>STEP 4</h2>
               <p>
@@ -155,7 +155,7 @@ const IndexPage = () => (
               </Button>
             </div>
           </Cell>
-          <Cell middle>
+          <Cell middle className="firstOnMobile">
             <img className="floating dropShadow" alt="Step Four Pic" src={stepFourPic} />
           </Cell>
         </Grid>
