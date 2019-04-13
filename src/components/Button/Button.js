@@ -6,7 +6,7 @@ import { themeNormal } from '../../constants';
 
 export const Button = ({ children, themeBtn, ...props }) => (
   <ThemeProvider theme={themeBtn}>
-    <ButtonWrapper type="button" {...props}>
+    <ButtonWrapper {...props}>
       {children}
     </ButtonWrapper>
   </ThemeProvider>

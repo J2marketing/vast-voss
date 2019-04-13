@@ -87,7 +87,7 @@ const IndexPage = () => (
       <InnerContainerBoxed padding="2rem 1rem">
         <Grid row dense columns="repeat(auto-fit,minmax(200px,1fr))" gap="80px">
           <Cell middle>
-            <img className="floating dropShadow" alt="Step One Pic" src={stepOnePic} />
+            <img className="dropShadow" alt="Step One Pic" src={stepOnePic} />
           </Cell>
           <Cell middle>
             <div>

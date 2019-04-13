@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const TopWave = styled.div`
-  height: 100px;
+  height: 104px;
   width: 100%;
   z-index: 10;
   overflow: hidden;
@@ -35,12 +35,12 @@ const BottomWave = styled.div`
 `;
 // TODO: Refactor these next 4 components into one that takes variables. not very DRY
 const WaveImgGreenTop = styled.div`
-  will-change: transform;
-  height: 198px;
+  will-change: auto;
+  height: 197px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3800px;
+  width: 6400px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
@@ -65,12 +65,12 @@ const WaveImgGreenTop = styled.div`
 `;
 
 const WaveImgGreenBottom = styled.div`
-  will-change: transform;
-  height: 198px;
+  will-change: auto;
+  height: 197px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3800px;
+  width: 6400px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveDarkGreen});
@@ -92,12 +92,12 @@ const WaveImgGreenBottom = styled.div`
 `;
 
 const WaveImgGreyTop = styled.div`
-  will-change: transform;
-  height: 198px;
+  will-change: auto;
+  height: 197px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3800px;
+  width: 6400px;
   overflow-y: hidden;
   bottom: 0;
   background-color: ${COLOR.LIGHTGREY};
@@ -122,12 +122,12 @@ const WaveImgGreyTop = styled.div`
 `;
 
 const WaveImgGreyBottom = styled.div`
-  will-change: transform;
-  height: 198px;
+  will-change: auto;
+  height: 197px;
   position: absolute;
   background-position: top center;
   background-repeat: repeat-x;
-  width: 3800px;
+  width: 6400px;
   overflow-y: hidden;
   background-color: ${COLOR.LIGHTGREY};
   background-image: url(${waveGrey});
@@ -156,30 +156,30 @@ const InnerContainerFull = ({
   children,
   ...props
 }) => (
-  <Wrapper {...props}>
-    {isWavyTopGreen && (
-      <TopWave>
-        <WaveImgGreenTop />
-      </TopWave>
-    )}
-    {isWavyTopGrey && (
-      <TopWave>
-        <WaveImgGreyTop />
-      </TopWave>
-    )}
-    {children}
-    {isWavyBottomGreen && (
-      <BottomWave>
-        <WaveImgGreenBottom />
-      </BottomWave>
-    )}
-    {isWavyBottomGrey && (
-      <BottomWave>
-        <WaveImgGreyBottom />
-      </BottomWave>
-    )}
-  </Wrapper>
-);
+    <Wrapper {...props}>
+      {isWavyTopGreen && (
+        <TopWave>
+          <WaveImgGreenTop />
+        </TopWave>
+      )}
+      {isWavyTopGrey && (
+        <TopWave>
+          <WaveImgGreyTop />
+        </TopWave>
+      )}
+      {children}
+      {isWavyBottomGreen && (
+        <BottomWave>
+          <WaveImgGreenBottom />
+        </BottomWave>
+      )}
+      {isWavyBottomGrey && (
+        <BottomWave>
+          <WaveImgGreyBottom />
+        </BottomWave>
+      )}
+    </Wrapper>
+  );
 
 InnerContainerFull.defaultProps = {
   isWavyTopGreen: null,
