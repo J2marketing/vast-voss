@@ -196,9 +196,9 @@ export const ResetStyle = createGlobalStyle`
     margin:0.5rem;
   }
 
-  .dropShadow{
+  /*.dropShadow{
     box-shadow: 10px 10px 20px ${darken(0.2, COLOR.GREY)};
-  }
+  }*/
 
   .ctaText{
     text-align:center;

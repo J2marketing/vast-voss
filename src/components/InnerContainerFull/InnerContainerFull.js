@@ -21,7 +21,7 @@ const TopWave = styled.div`
   z-index: 10;
   overflow: hidden;
   position: relative;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 `;
 
 const BottomWave = styled.div`
@@ -30,7 +30,7 @@ const BottomWave = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 10;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   & div {
     transform: rotate(180deg);
   }
@@ -49,11 +49,11 @@ const WaveImgGreenTop = styled.div`
   background-image: url(${waveDarkGreen});
   transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    animation-delay: 3500ms;
+    animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 5000ms;
   }
   @media only screen and (max-width: 500px) {
-    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 2000ms;
   }
   @keyframes wave {
@@ -78,10 +78,10 @@ const WaveImgGreenBottom = styled.div`
   background-image: url(${waveDarkGreen});
   transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @media only screen and (max-width: 500px) {
-    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @keyframes wave {
     0% {
@@ -106,11 +106,11 @@ const WaveImgGreyTop = styled.div`
   background-image: url(${waveGrey});
   transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    animation-delay: 3500ms;
+    animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation-delay: 5000ms;
   }
   @media only screen and (max-width: 500px) {
-    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation-delay: 2000ms;
   }
   @keyframes wave {
@@ -135,10 +135,10 @@ const WaveImgGreyBottom = styled.div`
   background-image: url(${waveGrey});
   transform: translate3d(0, 0, 0);
   @media only screen and (min-width: 500px) {
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @media only screen and (max-width: 500px) {
-    animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   }
   @keyframes wave {
     0% {
@@ -158,30 +158,30 @@ const InnerContainerFull = ({
   children,
   ...props
 }) => (
-    <Wrapper {...props}>
-      {isWavyTopGreen && (
-        <TopWave>
-          <WaveImgGreenTop />
-        </TopWave>
-      )}
-      {isWavyTopGrey && (
-        <TopWave>
-          <WaveImgGreyTop />
-        </TopWave>
-      )}
-      {children}
-      {isWavyBottomGreen && (
-        <BottomWave>
-          <WaveImgGreenBottom />
-        </BottomWave>
-      )}
-      {isWavyBottomGrey && (
-        <BottomWave>
-          <WaveImgGreyBottom />
-        </BottomWave>
-      )}
-    </Wrapper>
-  );
+  <Wrapper {...props}>
+    {isWavyTopGreen && (
+      <TopWave>
+        <WaveImgGreenTop />
+      </TopWave>
+    )}
+    {isWavyTopGrey && (
+      <TopWave>
+        <WaveImgGreyTop />
+      </TopWave>
+    )}
+    {children}
+    {isWavyBottomGreen && (
+      <BottomWave>
+        <WaveImgGreenBottom />
+      </BottomWave>
+    )}
+    {isWavyBottomGrey && (
+      <BottomWave>
+        <WaveImgGreyBottom />
+      </BottomWave>
+    )}
+  </Wrapper>
+);
 
 InnerContainerFull.defaultProps = {
   isWavyTopGreen: null,
