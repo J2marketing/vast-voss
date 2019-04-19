@@ -60,7 +60,7 @@ export const ResetStyle = createGlobalStyle`
     opacity:0;
     animation:fadein ease-in 1;
     animation-fill-mode:forwards;
-    animation-duration:300ms;
+    animation-duration:900ms;
     animation-delay:0.1s;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 16px;
