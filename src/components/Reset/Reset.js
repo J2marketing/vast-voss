@@ -57,6 +57,11 @@ export const ResetStyle = createGlobalStyle`
   }
 
   html {
+    opacity:0;
+    animation:fadein ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:300ms;
+    animation-delay:0.1s;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -67,6 +72,14 @@ export const ResetStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
     font-family: 'Lato', sans-serif;
     background: ${COLOR.LIGHTGREY};
+  }
+  @keyframes fadein{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
   }
 
   h1 {
