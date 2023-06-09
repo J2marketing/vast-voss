@@ -34,7 +34,7 @@
     "@emotion/styled": "^10.0.7",
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
-    "gatsby": "^2.0.91",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.0.26",
     "gatsby-mdx": "^0.3.5",
     "gatsby-plugin-manifest": "^2.0.13",
